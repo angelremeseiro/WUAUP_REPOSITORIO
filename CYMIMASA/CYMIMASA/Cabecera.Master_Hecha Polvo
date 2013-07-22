@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cabecera.master.cs" Inherits="CYMIMASA.Cabecera" %>
+
+<%@ Register Assembly="Telerik.OpenAccess.Web.40" Namespace="Telerik.OpenAccess.Web" TagPrefix="telerik" %>
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CYMIMASA</title>
+    <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="EstiloBody">
+    <form id="form1" runat="server">
+
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+            </Scripts>
+        </telerik:RadScriptManager>
+        <telerik:OpenAccessLinqDataSource ID="OpenAccessLinqDataSource1" runat="server">
+        </telerik:OpenAccessLinqDataSource>
+        <script type="text/javascript">
+            //PColocar Aquí Java
+        </script>
+        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+        </telerik:RadAjaxManager>
+
+        <div>
+            <div id="Cabecera" class="BarraPrincipal">
+
+                <!-- Logo -->
+                <div style="position: absolute; top: 5px; left: 10px;">
+                    <a href="/" onmouseout="getElementById('BotonLogo').src='../images/LogoCabecera.png';"
+                        onmouseover="getElementById('BotonLogo').src='../images/LogoCabeceraFlash.png';">
+                        <img id="BotonLogo" src="../images/LogoCabecera.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <!-- Botones de ejemplo -->
+                <div style="position: absolute; top: 7px; left: 130px;">
+                    <a href="/" onmouseout="getElementById('BotonNoticias').src='../images/BotonNoticias.png';"
+                        onmouseover="getElementById('BotonNoticias').src='../images/BotonNoticiasFlash.png';">
+                        <img id="BotonNoticias" src="../images/BotonNoticias.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 210px;">
+                    <a href="/" onmouseout="getElementById('BotonDocumentacion').src='../images/BotonDocumentacion.png';"
+                        onmouseover="getElementById('BotonDocumentacion').src='../images/BotonDocumentacionFlash.png';">
+                        <img id="BotonDocumentacion" src="../images/BotonDocumentacion.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 290px;">
+                    <a href="/" onmouseout="getElementById('BotonWebMail').src='../images/BotonWebMail.png';"
+                        onmouseover="getElementById('BotonWebMail').src='../images/BotonWebMailFlash.png';">
+                        <img id="BotonWebMail" src="../images/BotonWebMail.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 360px;">
+                    <a href="/" onmouseout="getElementById('BotonPersonas').src='../images/BotonPersonas.png';"
+                        onmouseover="getElementById('BotonPersonas').src='../images/BotonPersonasFlash.png';">
+                        <img id="BotonPersonas" src="../images/BotonPersonas.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 430px;">
+                    <a href="/" onmouseout="getElementById('BotonTicketing').src='../images/BotonTicketing.png';"
+                        onmouseover="getElementById('BotonTicketing').src='../images/BotonTicketingFlash.png';">
+                        <img id="BotonTicketing" src="../images/BotonTicketing.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 500px;">
+                    <a href="/" onmouseout="getElementById('BotonImagenCorporativa').src='../images/BotonImagenCorporativa.png';"
+                        onmouseover="getElementById('BotonImagenCorporativa').src='../images/BotonImagenCorporativaFlash.png';">
+                        <img id="BotonImagenCorporativa" src="../images/BotonImagenCorporativa.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <div style="position: absolute; top: 7px; left: 570px;">
+                    <a href="/" onmouseout="getElementById('BotonOracle').src='../images/BotonOracle.png';"
+                        onmouseover="getElementById('BotonOracle').src='../images/BotonOracleFlash.png';">
+                        <img id="BotonOracle" src="../images/BotonOracle.png" style="border: 0" />
+                    </a>
+                </div>
+
+                <!-- Persona logeada -->
+                <div style="position: absolute; top: 7px; right: 25px;">
+                    <asp:DropDownList ID="PersonaLogeada" runat="server">
+                    </asp:DropDownList>
+                </div>
+
+
+                <!-- Menu -->
+                <div style="position: absolute; top: 64px; left: 130px;">
+                    <ul class="menu">
+                        <li><a href="#">Prevención de Riesgos, Calidad y Medio Ambiente</a>
+                            <ul>
+							<li><a href="#">Prevención de Riesgos</a></li>
+                                <li><a href="#">
+
+                                 <ul class="menu" style="position: absolute; top: 4px; left: 130px;">
+                                     <li><a href="#">Auditorías</a>
+									 <li><a href="#">Comités y Reuniones</a>
+                                         <ul>
+                               
+								<li><a href="#">Formación</a> </li>
+								<li><a href="#">Información</a> </li>
+								<li><a href="#">No conformidades</a> </li>
+								<li><a href="#">Acciones Correctivas y Preventivas</a> </li>
+								<li><a href="#">Investigación de Accidentes</a> </li>
+								<li><a href="#">Estadísticas de Accidentalidad</a> </li>
+								<li><a href="#">Inspecciones y Visitas a Obras</a> </li>
+								<li><a href="#">Evaluaciones de Riesgos</a> </li>
+                                <li><a href="#">Entrega de EPI´s</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Calidad</a>
+                            <ul>
+                                <li><a href="#">Satisfacción del Cliente</a></li>
+                                <li><a href="#">
+
+                                 <ul class="menu" style="position: absolute; top: 4px; left: 130px;">
+                                     <li><a href="#">aaaaaa</a>
+                                         <ul>
+                                             <li><a href="#">Historia</a> </li>
+                                             <li><a href="#">Galería</a> </li>
+                                             <li><a href="#">Social</a></li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+
+                                </a></li>
+
+                                <li><a href="#">Diseño Gráfico</a></li>
+                                <li><a href="#">Programación</a></li>
+                                <li><a href="#">Edición de Vídeo</a></li>
+                                <li><a href="#">Nosotros</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Clientes</a>
+                            <ul>
+                                <li><a href="#">Casos de Éxito</a></li>
+                                <li><a href="#">Internacionales</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Multimedia</a>
+                            <ul>
+                                <li><a href="#">Galería</a></li>
+                                <li><a href="#">Vídeo Galería</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Otra Opción</a>
+                            <ul>
+                                <li><a href="#">Galería</a></li>
+                                <li><a href="#">Vídeo Galería</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Y más opciones</a>
+                            <ul>
+                                <li><a href="#">Galería</a></li>
+                                <li><a href="#">Vídeo Galería</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Versión 0.0.2.0</a>
+                            <ul>
+                                <li><a href="#">Galería</a></li>
+                                <li><a href="#">Vídeo Galería</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <asp:ContentPlaceHolder ID="LateralIzquierdo" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>
+

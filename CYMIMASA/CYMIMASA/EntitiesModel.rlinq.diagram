@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDiagrams>
+  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EntitiesModel" fillColor="62, 62, 65" isDefault="true">
+    <DomainModelMoniker name="/BBDD" />
+    <nestedChildShapes>
+      <classShape Id="b6ae1ba9-ad73-4f2f-89be-e529657ecbe7" absoluteBounds="0.75, 0.75, 1.5, 1.7627718098958329" fillColor="225, 249, 128, 67" outlineColor="213, 71, 0" textColor="White">
+        <DomainClassMoniker name="/BBDD/MaestraPaises" />
+        <nestedChildShapes>
+          <elementListCompartment Id="ff0f749b-32d7-488f-9335-584dd0914807" absoluteBounds="0.76500000000000012, 1.2599999999999998, 1.4700000000000002, 0.63399251302083326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="ec474dd7-a0f5-41d4-b6b2-8660fcbcfc64" absoluteBounds="0.76500000000000012, 1.9039925130208335, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="4be5c5ac-b236-4dbc-bc04-07e58060d43d" absoluteBounds="0.76500000000000012, 2.1633821614583333, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <commentBoxShape Id="c21e28c8-417d-45f1-8fe3-90c61fcba243" absoluteBounds="2.75, 0.75, 1.375, 0.875" fillColor="ActiveBorder">
+        <CommentMoniker name="/BBDD/Mi comentario" />
+      </commentBoxShape>
+    </nestedChildShapes>
+  </entityDiagramsDiagram>
+</EntityDiagrams>

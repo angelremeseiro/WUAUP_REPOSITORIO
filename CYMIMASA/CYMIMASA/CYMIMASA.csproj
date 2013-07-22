@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CYMIMASA</RootNamespace>
+    <AssemblyName>CYMIMASA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.OpenAccess, Version=2013.1.219.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2013.1.219.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.Web, Version=2013.1.219.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.Web.40, Version=2013.1.219.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2013\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2013\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccidentesConsulta_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccidentesGetXBO_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccidentesLeer_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BBDDCYMIMASA.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBDDCYMIMASA.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BBDDCYMIMASA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BBDDCYMIMASA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBDDCYMIMASA.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Cabecera.Master.cs">
+      <DependentUpon>Cabecera.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cabecera.Master.designer.cs">
+      <DependentUpon>Cabecera.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.master.cs">
+      <DependentUpon>Default.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.master.designer.cs">
+      <DependentUpon>Default.master</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntitiesModel.rlinq</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidActosInseguros.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidClasificacionAccidente.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidCondicionesInseguras.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidConsecuencias.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidEvaluarRiesgo.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidFormaSuceso.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidHora.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidLugarTrabajo.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidParteLesionada.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidTipoAccion.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidTipoGrafico.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidTipoLesion.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAccidTipoRiesgo.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaestraPaises.generated.cs">
+      <DependentUpon>EntitiesModel.rlinq</DependentUpon>
+    </Compile>
+    <Compile Include="MCentrosOperativos.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDelegacion.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDiasSemana.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDivision.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEmpresas.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSuperior.aspx.cs">
+      <DependentUpon>MenuSuperior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuSuperior.aspx.designer.cs">
+      <DependentUpon>MenuSuperior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MEtiquetas.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPaises.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPersonal.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPersonalCategoria.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSiNo.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\accidentes\Accidente.aspx.cs">
+      <DependentUpon>Accidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\accidentes\Accidente.aspx.designer.cs">
+      <DependentUpon>Accidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\accidentes\accidentes.master.cs">
+      <DependentUpon>accidentes.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\accidentes\accidentes.master.designer.cs">
+      <DependentUpon>accidentes.master</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\accidentes\ConsultaAccidentes.aspx.cs">
+      <DependentUpon>ConsultaAccidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\accidentes\ConsultaAccidentes.aspx.designer.cs">
+      <DependentUpon>ConsultaAccidentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\accidentes\Graficos.aspx.cs">
+      <DependentUpon>Graficos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\accidentes\Graficos.aspx.designer.cs">
+      <DependentUpon>Graficos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalGETxNIF_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pruebas.aspx.cs">
+      <DependentUpon>Pruebas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pruebas.aspx.designer.cs">
+      <DependentUpon>Pruebas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TAccidentes.cs">
+      <DependentUpon>BBDDCYMIMASA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADO.edmx.sql" />
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="CajonDesastre.txt" />
+    <Content Include="css\cuerpo.css" />
+    <Content Include="css\GraficosBarras.css" />
+    <Content Include="css\master.css" />
+    <Content Include="css\lateralIzquierdo.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="paginas\accidentes\ConsultaAccidentes.aspx" />
+    <Content Include="paginas\accidentes\Graficos.aspx" />
+    <Content Include="paginas\images\BarraSuperior.png" />
+    <Content Include="paginas\images\BarraTitulo.png" />
+    <Content Include="paginas\images\BotonAyuda.png" />
+    <Content Include="paginas\images\BotonAyudaFlash.png" />
+    <Content Include="paginas\images\BotonDocumentacion.png" />
+    <Content Include="paginas\images\BotonDocumentacionFlash.png" />
+    <Content Include="paginas\images\BotonImagenCorporativa.png" />
+    <Content Include="paginas\images\BotonImagenCorporativaFlash.png" />
+    <Content Include="paginas\images\BotonNoticias.png" />
+    <Content Include="paginas\images\BotonNoticiasFlash.png" />
+    <Content Include="paginas\images\BotonOracle.png" />
+    <Content Include="paginas\images\BotonOracleFlash.png" />
+    <Content Include="paginas\images\BotonPersonas.png" />
+    <Content Include="paginas\images\BotonPersonasFlash.png" />
+    <Content Include="paginas\images\BotonTicketing.png" />
+    <Content Include="paginas\images\BotonTicketingFlash.png" />
+    <Content Include="paginas\images\BotonWebMail.png" />
+    <Content Include="paginas\images\BotonWebMailFlash.png" />
+    <Content Include="paginas\images\FondoBontonIzquierdo.png" />
+    <Content Include="paginas\images\FondoMaestra.png" />
+    <Content Include="paginas\images\LogoCabecera.png" />
+    <Content Include="paginas\images\LogoCabeceraFlash.png" />
+    <Content Include="paginas\images\LogoCabeceraMicro.png" />
+    <Content Include="MenuSuperior.aspx" />
+    <Content Include="paginas\accidentes\Accidente.aspx" />
+    <Content Include="paginas\WebForm1.aspx" />
+    <Content Include="Pruebas.aspx" />
+    <Content Include="SQL\Accidentes.txt" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Cabecera.Master" />
+    <EntityDeploy Include="ADO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ADO.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ADO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADO.edmx</DependentUpon>
+      <LastGenOutput>ADO.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ADO.edmx.diagram">
+      <DependentUpon>ADO.edmx</DependentUpon>
+    </Content>
+    <Content Include="ADO.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADO.edmx</DependentUpon>
+      <LastGenOutput>ADO.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="paginas\accidentes\accidentes.master" />
+    <OpenAccessDeploy Include="EntitiesModel.rlinq">
+      <Generator>MetaModelCodeGenerator</Generator>
+      <LastGenOutput>EntitiesModel.cs</LastGenOutput>
+    </OpenAccessDeploy>
+    <Content Include="EntitiesModel.rlinq.diagram">
+      <DependentUpon>EntitiesModel.rlinq</DependentUpon>
+    </Content>
+    <EntityDeploy Include="BBDDCYMIMASA.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BBDDCYMIMASA.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="BBDDCYMIMASA.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BBDDCYMIMASA.edmx</DependentUpon>
+      <LastGenOutput>BBDDCYMIMASA.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BBDDCYMIMASA.edmx.diagram">
+      <DependentUpon>BBDDCYMIMASA.edmx</DependentUpon>
+    </Content>
+    <Content Include="BBDDCYMIMASA.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BBDDCYMIMASA.edmx</DependentUpon>
+      <LastGenOutput>BBDDCYMIMASA.cs</LastGenOutput>
+    </Content>
+    <Content Include="Default.master" />
+    <None Include="Properties\PublishProfiles\Publicar.pubxml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{96d31771-cb89-4117-929c-5289c8519969}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sesion\Sesion.csproj">
+      <Project>{68fec95c-772e-4852-9ecb-e295a7c49b99}</Project>
+      <Name>Sesion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="global\" />
+    <Folder Include="sesion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16054/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\OpenAccess.targets')" Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />
+</Project>

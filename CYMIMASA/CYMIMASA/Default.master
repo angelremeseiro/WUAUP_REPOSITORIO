@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Cabecera.Master" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="CYMIMASA.Default" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="/../../css/lateralIzquierdo.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+
+
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="LateralIzquierdo" runat="server">
+    <div id="bordeExterior">
+        <div id="nav">
+            <div class="titulonav">
+                Portada
+            </div>
+
+            <div class="cuerporec">
+                <ul>
+                    <li><a href="ConsultaAccidentes.aspx"></a></li>
+                    <li><a href="Accidente.aspx"></a></li>
+                    <li><a href="Graficos.aspx"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="Contenido" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>

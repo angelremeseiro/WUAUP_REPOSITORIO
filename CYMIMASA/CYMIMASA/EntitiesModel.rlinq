@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="BBDD" namespace="CYMIMASA" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="BBDD" backend="mssql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="CYMIMASA" default="true">
+      <orm:class name="MaestraPaises" uniqueId="c45e23af-5407-4a64-8e70-957847d34f52">
+        <orm:identity />
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iDPais" property="IDPais" behavior="readwrite" uniqueId="19c1fc75-caf0-4b84-b6f0-e167d674d2d0" type="System.Int32" />
+        <orm:field name="_nombrePais" property="NombrePais" behavior="readwrite" uniqueId="9f27e565-9ee1-48f6-b838-4ca7f27153bc" type="System.String" />
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="Maestra Paises">
+        <orm:column name="ID Pais" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Nombre Pais" sql-type="nchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringFixedLength" />
+      </orm:table>
+      <orm:table name="MaestraPaises">
+        <orm:column nullable="false" length="50" name="NombrePais" scale="0" sql-type="nchar" ado-type="UnicodeStringFixedLength" />
+        <orm:column nullable="false" length="0" name="IDPais" scale="0" sql-type="int" ado-type="Int32" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-leading-underscore>False</orm:remove-leading-underscore>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>BBDDConexion</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>data source=cmsql01\web;initial catalog=Intranet;persist security info=True;user id=usuario_web;password=cymiweb2609;multipleactiveresultsets=True;application name=EntityFramework</AppConfigConnectionString>
+    <InitialCatalog>Intranet</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <DeploymentProject>CYMIMASA</DeploymentProject>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MsSql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+        <Logging>
+          <MetricStoreSnapshotInterval>0</MetricStoreSnapshotInterval>
+        </Logging>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Comments>
+    <Comment name="Mi comentario" Text="Texto Comentario" />
+  </Comments>
+  <Types>
+    <DomainClass Id="c45e23af-5407-4a64-8e70-957847d34f52" name="MaestraPaises" namespace="CYMIMASA" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="19c1fc75-caf0-4b84-b6f0-e167d674d2d0" name="IDPais" type="Int32" label="IDPais : Int32" kind="Persistent" fieldName="_iDPais" />
+      <Property Id="9f27e565-9ee1-48f6-b838-4ca7f27153bc" name="NombrePais" label="NombrePais : String" kind="Persistent" fieldName="_nombrePais" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="8e69d9a7-9e69-4e90-993e-7e9900a5e7a8">
+      <domainContainer name="BBDD" namespace="CYMIMASA" showPropertiesCompartment="true">
+        <entitySetProperty name="MaestraPaises1" namespace="CYMIMASA" type="MaestraPaises" label="MaestraPaises1 : IQueryable&lt;CYMIMASA.MaestraPaises&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

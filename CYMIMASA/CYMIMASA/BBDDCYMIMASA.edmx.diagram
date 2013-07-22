@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4e13aad04bf44a90b47dc1d22bb3eb67" Name="Diagrama1">
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidActosInseguros" Width="1.5" PointX="7.7142844254683167" PointY="10.748899494646537" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidClasificacionAccidente" Width="1.5" PointX="2.6674635608994697" PointY="21.060951898368518" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidCondicionesInseguras" Width="1.5" PointX="5.62720331997946" PointY="11.217825835206465" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidConsecuencias" Width="1.5" PointX="11.14802543593013" PointY="13.074673792847745" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidEvaluarRiesgo" Width="1.5" PointX="10.896228253327417" PointY="17.795634009780191" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidFormaSuceso" Width="1.5" PointX="4.4848381506674171" PointY="22.626169066236432" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidHora" Width="1.5" PointX="2.229629484112202" PointY="14.402034796030277" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidLugarTrabajo" Width="1.5" PointX="4.454496113795086" PointY="24.637818094639954" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidParteLesionada" Width="1.5" PointX="10.624332507431662" PointY="7.8064716047637495" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidTipoAccion" Width="1.5" PointX="0.2298325115022401" PointY="15.850001044501552" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidTipoGrafico" Width="1.5" PointX="11.776088822528761" PointY="29.461448131809686" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidTipoLesion" Width="1.5" PointX="6.9173032207960752" PointY="14.14362534049136" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MAccidTipoRiesgo" Width="1.5" PointX="2.0256514055773858" PointY="20.167252922508517" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MCentrosOperativos" Width="1.5" PointX="0.735743606805682" PointY="15.888256214507043" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MDelegacion" Width="1.5" PointX="9.6376728236850688" PointY="3.6727423088963804" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MDiasSemana" Width="1.5" PointX="4.7063918005239174" PointY="14.435008085535378" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MDivision" Width="1.5" PointX="3.6298102101449903" PointY="2.7303391558725103" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MEmpresas" Width="1.5" PointX="6.069388068313426" PointY="5.83222048256184" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MEtiquetas" Width="1.5" PointX="5.46459455483807" PointY="14.437571770715328" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MPaises" Width="1.5" PointX="6.87826745718637" PointY="23.189839478204885" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MPersonal" Width="1.5" PointX="1.3401055584382757" PointY="24.093677025331964" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MPersonalCategoria" Width="1.5" PointX="2.79624569732521" PointY="5.4400893028080883" />
+        <EntityTypeShape EntityType="BBDDAplicacion.MSiNo" Width="1.5" PointX="1.3758220883905059" PointY="19.320702591594635" />
+        <EntityTypeShape EntityType="BBDDAplicacion.sysdiagrams" Width="1.5" PointX="2.0528790792696547" PointY="4.4078415652773533" />
+        <EntityTypeShape EntityType="BBDDAplicacion.TAccidentes" Width="1.5" PointX="0.53272959242236317" PointY="6.3956269651631015" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

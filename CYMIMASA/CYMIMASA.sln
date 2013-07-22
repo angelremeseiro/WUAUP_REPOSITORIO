@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CYMIMASA", "CYMIMASA\CYMIMASA.csproj", "{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sesion", "Sesion\Sesion.csproj", "{68FEC95C-772E-4852-9ECB-E295A7C49B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global", "Global\Global.csproj", "{96D31771-CB89-4117-929C-5289C8519969}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://victor:8080/tfs/cymimasa
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CYMIMASA\\CYMIMASA.csproj
+		SccProjectName1 = CYMIMASA
+		SccLocalPath1 = CYMIMASA
+		SccProjectUniqueName2 = Global\\Global.csproj
+		SccProjectName2 = Global
+		SccLocalPath2 = Global
+		SccProjectUniqueName3 = Sesion\\Sesion.csproj
+		SccProjectName3 = Sesion
+		SccLocalPath3 = Sesion
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46109A09-6BE8-47BB-B4E9-9E1717BFCE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FEC95C-772E-4852-9ECB-E295A7C49B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FEC95C-772E-4852-9ECB-E295A7C49B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FEC95C-772E-4852-9ECB-E295A7C49B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FEC95C-772E-4852-9ECB-E295A7C49B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D31771-CB89-4117-929C-5289C8519969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D31771-CB89-4117-929C-5289C8519969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D31771-CB89-4117-929C-5289C8519969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D31771-CB89-4117-929C-5289C8519969}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VersionFieldUsingAttrib = True
+		FetchGroupUsingAttrib = True
+		IndexUsingAttrib = False
+		ShowOldMenu = False
+	EndGlobalSection
+EndGlobal

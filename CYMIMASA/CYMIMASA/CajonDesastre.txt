@@ -1,0 +1,223 @@
+﻿Telerik AJAX
+http://www.telerik.com/help/aspnet-ajax/ajax-ajaxpanel.html
+
+
+ALTER TABLE Accidentes ADD IDAutomatico int IDENTITY 
+go
+
+http://www.eslomas.com/2005/04/identificadores-autoincrementales-en-sql-server/
+
+
+http://mspnor.com/blog/2008/10/31/sqlprocedimientos-almacenados-paso-a-paso/
+http://www.cjorellana.net/2012/05/ejecutar-un-procedimiento-almacenado.html
+
+Ayuda Telerik
+http://www.telerik.com/help/aspnet-ajax/asyncupload-overview.html
+
+Guardar Ficheros:
+http://stackoverflow.com/questions/8435901/telerik-setting-targetphysicalfolder-dynamically-in-radupload
+
+Ofertas, Obras, Control Gestión
+
+imprimir:
+
+http://www.kirupa.com/html5/creating_printer_friendly_pages.htm
+
+http://elblogdejnj.blogspot.com.es/p/aprender-html5-en-dos-dias.html
+
+
+                    <telerik:RadComboBox runat="server" ID="RadComboBoxAutocompleteSeparator" AutoPostBack="true"
+                        Width="60" Label="Autocomplete separator:">
+                        <Items>
+                            <telerik:RadComboBoxItem Text="None" Value="" />
+                            <telerik:RadComboBoxItem Text=";" Value=";" Selected="true" />
+                            <telerik:RadComboBoxItem Text="," Value="," />
+                            <telerik:RadComboBoxItem Text="|" Value="|" />
+                            <telerik:RadComboBoxItem Text=";," Value=";," />
+                        </Items>
+                    </telerik:RadComboBox>
+
+		http://localhost:8301/RadControls_AspNetAjax/Input/Examples/singleinput/defaultcs.aspx
+
+
+		qsf:configuratorpanel runat="server" id="ConfigurationPanel1" expanded="true">
+            <table border="0" cellpadding="5px" cellspacing="0" style="table-layout:fixed">
+                <tr>
+                    <td style="width: 300px">
+                        <asp:label id="Label2" runat="server" text="Set Empty Message:" associatedcontrolid="TextBox1" style="width: 130px; display: inline-block;"></asp:label>
+                        <telerik:radtextbox id="TextBox1" runat="server" autopostback="true" ontextchanged="TextBox1_TextChanged" text="Set Empty Message" width="156px">
+                        </telerik:radtextbox>
+                    </td>
+                    <td style="width: 150px">
+                        <asp:checkbox id="CheckBox2" runat="server" checked="true" autopostback="true" text="Show/Hide Labels" oncheckedchanged="CheckBox2_CheckedChanged"></asp:checkbox>
+                    </td>
+                    <td>
+                        <asp:checkbox id="CheckBox3" runat="server" autopostback="true" text="Show/Hide Buttons" oncheckedchanged="CheckBox3_CheckedChanged"></asp:checkbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:label id="Label1" runat="server" text="RadTextBox Text Mode:" associatedcontrolid="RadComboBox1" style="width: 130px; display: inline-block;"></asp:label>
+                        <telerik:radcombobox id="RadComboBox1" runat="server" autopostback="true" onselectedindexchanged="RadComboBox1_SelectedIndexChanged">
+                            <items>
+                                <telerik:radcomboboxitem text="Single-line" value="SingleLine" selected="true"></telerik:radcomboboxitem>
+                                <telerik:radcomboboxitem text="Multi-line" value="MultiLine"></telerik:radcomboboxitem>
+                                <telerik:radcomboboxitem text="Password" value="Password"></telerik:radcomboboxitem>
+                            </items>
+                        </telerik:radcombobox>
+                    </td>
+                    <td colspan="2">
+                        <asp:checkbox id="CheckBox1" runat="server" checked="true" autopostback="true" text="Enable Single Input Rendering Mode" oncheckedchanged="CheckBox1_CheckedChanged"></asp:checkbox>
+                    </td>
+                </tr>
+            </table>
+        </qsf:configuratorpanel>
+
+
+SET ROWCOUNT 1
+delete MaestraCentrosOperativos where MaestraCentrosOperativos.IDCO=1101
+SET ROWCOUNT 0
+
+
+        <telerik:RadAjaxManagerProxy ID="AjaxManagerProxy1" runat="server">
+            <AjaxSettings>
+                <telerik:AjaxSetting AjaxControlID="EmployeesGrid">
+                    <UpdatedControls>
+                        <telerik:AjaxUpdatedControl ControlID="BO" LoadingPanelID="Ajax" />
+                        <telerik:AjaxUpdatedControl ControlID="NBO" LoadingPanelID="Ajax" />
+                         <telerik:AjaxUpdatedControl ControlID="LugarTrabajo" LoadingPanelID="Ajax" />
+                    </UpdatedControls>
+                </telerik:AjaxSetting>
+            </AjaxSettings>
+        </telerik:RadAjaxManagerProxy>
+
+
+
+
+
+
+		Estudiar mas adelante
+		SELECT [CC],[NDelegacion],[Division]
+FROM [MDelegacion]
+INNER JOIN MDivision ON MDelegacion.Division=MDivision.IDDivision
+WHERE MDivision.Idioma='ES' AND MDelegacion.Idioma='ES' AND MDelegacion.Division=1
+ORDER BY [NDelegacion]
+
+
+Eventos del Servidor
+http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=eventosASPNET
+
+
+
+
+PARA TELERIK, EJECUTAR JAVASCRIPT
+http://blogs.telerik.com/aspnet-ajax/posts/09-05-05/executing-javascript-function-from-server-side-code.aspx
+
+    <telerik:RadWindowManager ID="RadWindowManager1" runat="server"></telerik:RadWindowManager>
+
+
+	GRID TELERIK CON SELECCION
+
+            <table class="tabla">
+                <tr>
+                    <td>
+                        <telerik:RadGrid ID="TablaConsultaAccidentes" DataSourceID="SqlDataSourceTablaConsultaAccidentes" runat="server" AllowPaging="True" OnSelectedIndexChanged="TablaConsultaAccidentes_SelectedIndexChanged" AutoPostBack="true"
+                            PageSize="5" Width="833px" AllowMultiRowSelection="true" GridLines="None" Skin="Vista" OnItemDataBound="TablaConsultaAccidentes_ItemDataBound" AllowSorting="true">
+                            <PagerStyle Mode="NextPrevAndNumeric" PageButtonCount="100" PageSizeLabelText="Tamaño Página" NextPagesToolTip="Páginas Siguientes" NextPageToolTip="Siguiente Página" PrevPagesToolTip="Páginas Previas" PrevPageToolTip="Página Previa" FirstPageToolTip="Primera Página" GoToPageButtonToolTip="Ir a la Página" ChangePageSizeButtonToolTip="Cambiar Tamaño Página" LastPageToolTip="Última Página"></PagerStyle>
+                            <ClientSettings EnableRowHoverStyle="true" Selecting-AllowRowSelect="true" EnablePostBackOnRowClick="true">
+                                <Selecting AllowRowSelect="true"></Selecting>
+                            </ClientSettings>
+                            <SelectedItemStyle CssClass="SelectedItem"></SelectedItemStyle>
+                            <MasterTableView>
+                                <Columns>
+                                    <telerik:GridClientSelectColumn>
+                                    </telerik:GridClientSelectColumn>
+                                </Columns>
+                            </MasterTableView>
+                        </telerik:RadGrid>
+                        <asp:SqlDataSource ID="SqlDataSourceTablaConsultaAccidentes" ConnectionString="<%$ ConnectionStrings:BBDDConexion %>" runat="server"></asp:SqlDataSource>
+
+                    </td>
+                </tr>
+            </table>
+
+
+			            <table class="tabla">
+                <tr>
+                    <td>
+                        <telerik:RadGrid ID="TablaConsultaAccidentes" DataSourceID="SqlDataSourceTablaConsultaAccidentes" runat="server" AllowPaging="True" OnSelectedIndexChanged="TablaConsultaAccidentes_SelectedIndexChanged" AutoPostBack="true"
+                            PageSize="5" Width="833px" AllowMultiRowSelection="false" GridLines="None" Skin="Vista" OnItemDataBound="TablaConsultaAccidentes_ItemDataBound" AllowSorting="true">
+                            <ExportSettings HideStructureColumns="true">
+                            </ExportSettings>
+                            <ClientSettings EnableRowHoverStyle="true" Selecting-AllowRowSelect="true" EnablePostBackOnRowClick="true">
+                                <Selecting AllowRowSelect="true"></Selecting>
+                            </ClientSettings>
+                            <SelectedItemStyle CssClass="SelectedItem"></SelectedItemStyle>
+                            <MasterTableView Width="100%" CommandItemDisplay="Top">
+                                <PagerStyle Mode="NextPrevAndNumeric" PageButtonCount="100" PageSizeLabelText="Tamaño Página" NextPagesToolTip="Páginas Siguientes" NextPageToolTip="Siguiente Página" PrevPagesToolTip="Páginas Previas" PrevPageToolTip="Página Previa" FirstPageToolTip="Primera Página" GoToPageButtonToolTip="Ir a la Página" ChangePageSizeButtonToolTip="Cambiar Tamaño Página" LastPageToolTip="Última Página"></PagerStyle>
+                                <CommandItemSettings ShowExportToWordButton="true" ShowExportToExcelButton="true"
+                                    ShowExportToCsvButton="true" ShowExportToPdfButton="true"></CommandItemSettings>
+                                <Columns>
+                                    <telerik:GridClientSelectColumn>
+                                    </telerik:GridClientSelectColumn>
+                                </Columns>
+                            </MasterTableView>
+                        </telerik:RadGrid>
+                        <asp:SqlDataSource ID="SqlDataSourceTablaConsultaAccidentes" ConnectionString="<%$ ConnectionStrings:BBDDConexion %>" runat="server"></asp:SqlDataSource>
+                    </td>
+                </tr>
+            </table>
+
+
+			<telerik:RadSkinManager ID="QsfSkinManager" runat="server" ShowChooser="true" />
+
+
+
+
+
+			                        <li><a href="#">Nosotros</a>
+                            <ul>
+                                <li><a href="#">Diseño Web</a></li>
+                                <li><a href="#">Submenú …
+
+                                 <ul class="menu" style="position: absolute; top: 4px; left: 130px;">
+                                     <li><a href="#">Opción principal</a>
+                                         <ul>
+                                             <li><a href="#">Historia</a> </li>
+                                             <li><a href="#">Galería&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+                                             <li><a href="#">Social&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+
+                                </a></li>
+
+                                <li><a href="#">Diseño Gráfico</a></li>
+                                <li><a href="#">Programación</a></li>
+                            </ul>
+                        </li>
+
+
+			<p class="seccion"></p>
+            <table class="tabla">
+                <tr>
+                    <td style="width: 125px"></td>
+                    <td>
+                        <telerik:RadButton ID="AccederRegistro" runat="server" Text="Acceder al Registro">
+                            <Icon PrimaryIconCssClass="rbEdit" PrimaryIconLeft="4" PrimaryIconTop="4"></Icon>
+                        </telerik:RadButton>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <telerik:RadButton ID="ImprimirRegistros" runat="server" Text="Imprimir Registros">
+                        <Icon SecondaryIconCssClass="rbPrint" PrimaryIconLeft="4" PrimaryIconTop="4"></Icon>
+                    </telerik:RadButton>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <telerik:RadButton ID="DescargarRelacion" runat="server" Text="Descargar Relacion">
+                        <Icon SecondaryIconCssClass="rbDownload" PrimaryIconLeft="4" PrimaryIconTop="4"></Icon>
+                    </telerik:RadButton>
+                    </td>
+                </tr>
+            </table>
+
+        </div>

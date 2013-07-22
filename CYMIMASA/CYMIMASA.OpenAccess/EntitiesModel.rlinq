@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="EntitiesModel" namespace="CYMIMASA.OpenAccess" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="EntitiesModel" backend="mssql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="CYMIMASA.OpenAccess" default="true" />
+    <orm:schema schema="Categorias">
+      <orm:table name="Categorias" schema="Categorias">
+        <orm:column name="ID" sql-type="int" nullable="false" primary-key="true" length="0" scale="0" ado-type="" />
+        <orm:column name="NPais" sql-type="nchar" nullable="false" length="50" scale="0" ado-type="" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-leading-underscore>False</orm:remove-leading-underscore>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>IntranetConnection1</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>Data Source=cmsql01\web;Initial Catalog=Intranet;Persist Security Info=True;User ID=usuario_web;Password=cymiweb2609</AppConfigConnectionString>
+    <InitialCatalog>Intranet</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <DeploymentProject>CYMIMASA.OpenAccess</DeploymentProject>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MsSql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+        <Logging>
+          <MetricStoreSnapshotInterval>0</MetricStoreSnapshotInterval>
+        </Logging>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <domainContext>
+    <domainModelHasDomainContext Id="8bde1dd1-d990-4e3c-961c-df9b8516ea2b">
+      <domainContainer name="EntitiesModel" namespace="CYMIMASA.OpenAccess" showPropertiesCompartment="true" />
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

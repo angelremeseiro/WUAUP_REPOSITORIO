@@ -1,0 +1,48 @@
+﻿.mainWrapper {
+    width: 810px;
+}
+
+.customLegendWrapper {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.customLegend {
+    background-color: #eeeeee;
+    color: #555555;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 5px;
+}
+
+    .customLegend div {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin: 0px 5px;
+        height: 20px;
+    }
+
+        .customLegend div div {
+            width: 10px;
+            height: 10px;
+            vertical-align: -1px;
+            .vertical-align: middle;
+        }
+
+    .customLegend .warnings div {
+        background-color: #30abf2;
+    }
+
+    .customLegend .errors div {
+        background-color: #006caa;
+    }
+
+    .customLegend .warningsHigh div {
+        background-color: #ffb128;
+    }
+
+    .customLegend .errorsHigh div {
+        background-color: #ff8828;
+    }

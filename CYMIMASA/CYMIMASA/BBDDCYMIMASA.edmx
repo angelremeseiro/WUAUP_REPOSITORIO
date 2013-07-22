@@ -1,0 +1,1721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BBDDAplicacion.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BBDDAplicacionStoreContainer">
+          <EntitySet Name="MAccidActosInseguros" EntityType="BBDDAplicacion.Store.MAccidActosInseguros" store:Type="Tables" store:Schema="dbo" store:Name="MAccidActosInseguros">
+            <DefiningQuery>SELECT 
+      [MAccidActosInseguros].[IDActosInseguros] AS [IDActosInseguros], 
+      [MAccidActosInseguros].[ActosInseguros] AS [ActosInseguros], 
+      [MAccidActosInseguros].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidActosInseguros] AS [MAccidActosInseguros]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidClasificacionAccidente" EntityType="BBDDAplicacion.Store.MAccidClasificacionAccidente" store:Type="Tables" store:Schema="dbo" store:Name="MAccidClasificacionAccidente">
+            <DefiningQuery>SELECT 
+      [MAccidClasificacionAccidente].[IDClasifAccid] AS [IDClasifAccid], 
+      [MAccidClasificacionAccidente].[ClasificacionAccidente] AS [ClasificacionAccidente], 
+      [MAccidClasificacionAccidente].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidClasificacionAccidente] AS [MAccidClasificacionAccidente]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidCondicionesInseguras" EntityType="BBDDAplicacion.Store.MAccidCondicionesInseguras" store:Type="Tables" store:Schema="dbo" store:Name="MAccidCondicionesInseguras">
+            <DefiningQuery>SELECT 
+      [MAccidCondicionesInseguras].[IDCondInseguras] AS [IDCondInseguras], 
+      [MAccidCondicionesInseguras].[CondicionesInseguras] AS [CondicionesInseguras], 
+      [MAccidCondicionesInseguras].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidCondicionesInseguras] AS [MAccidCondicionesInseguras]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidConsecuencias" EntityType="BBDDAplicacion.Store.MAccidConsecuencias" store:Type="Tables" store:Schema="dbo" store:Name="MAccidConsecuencias">
+            <DefiningQuery>SELECT 
+      [MAccidConsecuencias].[IDConsecuencias] AS [IDConsecuencias], 
+      [MAccidConsecuencias].[Consecuencias] AS [Consecuencias], 
+      [MAccidConsecuencias].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidConsecuencias] AS [MAccidConsecuencias]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidEvaluarRiesgo" EntityType="BBDDAplicacion.Store.MAccidEvaluarRiesgo" store:Type="Tables" store:Schema="dbo" store:Name="MAccidEvaluarRiesgo">
+            <DefiningQuery>SELECT 
+      [MAccidEvaluarRiesgo].[IDEvalRiesgo] AS [IDEvalRiesgo], 
+      [MAccidEvaluarRiesgo].[EvaluarRiesgo] AS [EvaluarRiesgo], 
+      [MAccidEvaluarRiesgo].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidEvaluarRiesgo] AS [MAccidEvaluarRiesgo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidFormaSuceso" EntityType="BBDDAplicacion.Store.MAccidFormaSuceso" store:Type="Tables" store:Schema="dbo" store:Name="MAccidFormaSuceso">
+            <DefiningQuery>SELECT 
+      [MAccidFormaSuceso].[IDFormaSuceso] AS [IDFormaSuceso], 
+      [MAccidFormaSuceso].[FormaSuceso] AS [FormaSuceso], 
+      [MAccidFormaSuceso].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidFormaSuceso] AS [MAccidFormaSuceso]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidHora" EntityType="BBDDAplicacion.Store.MAccidHora" store:Type="Tables" store:Schema="dbo" store:Name="MAccidHora">
+            <DefiningQuery>SELECT 
+      [MAccidHora].[IDHora] AS [IDHora], 
+      [MAccidHora].[Hora] AS [Hora], 
+      [MAccidHora].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidHora] AS [MAccidHora]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidLugarTrabajo" EntityType="BBDDAplicacion.Store.MAccidLugarTrabajo" store:Type="Tables" store:Schema="dbo" store:Name="MAccidLugarTrabajo">
+            <DefiningQuery>SELECT 
+      [MAccidLugarTrabajo].[IDLugarTrabajo] AS [IDLugarTrabajo], 
+      [MAccidLugarTrabajo].[LugarTrabajo] AS [LugarTrabajo], 
+      [MAccidLugarTrabajo].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidLugarTrabajo] AS [MAccidLugarTrabajo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidParteLesionada" EntityType="BBDDAplicacion.Store.MAccidParteLesionada" store:Type="Tables" store:Schema="dbo" store:Name="MAccidParteLesionada">
+            <DefiningQuery>SELECT 
+      [MAccidParteLesionada].[IDParteLesionada] AS [IDParteLesionada], 
+      [MAccidParteLesionada].[ParteLesionada] AS [ParteLesionada], 
+      [MAccidParteLesionada].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidParteLesionada] AS [MAccidParteLesionada]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidTipoAccion" EntityType="BBDDAplicacion.Store.MAccidTipoAccion" store:Type="Tables" store:Schema="dbo" store:Name="MAccidTipoAccion">
+            <DefiningQuery>SELECT 
+      [MAccidTipoAccion].[IDTipodeAccion] AS [IDTipodeAccion], 
+      [MAccidTipoAccion].[TipodeAccion] AS [TipodeAccion], 
+      [MAccidTipoAccion].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidTipoAccion] AS [MAccidTipoAccion]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidTipoGrafico" EntityType="BBDDAplicacion.Store.MAccidTipoGrafico" store:Type="Tables" store:Schema="dbo" store:Name="MAccidTipoGrafico">
+            <DefiningQuery>SELECT 
+      [MAccidTipoGrafico].[IDTipoGrafico] AS [IDTipoGrafico], 
+      [MAccidTipoGrafico].[NTipoGrafico] AS [NTipoGrafico], 
+      [MAccidTipoGrafico].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidTipoGrafico] AS [MAccidTipoGrafico]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidTipoLesion" EntityType="BBDDAplicacion.Store.MAccidTipoLesion" store:Type="Tables" store:Schema="dbo" store:Name="MAccidTipoLesion">
+            <DefiningQuery>SELECT 
+      [MAccidTipoLesion].[IDTipoLesion] AS [IDTipoLesion], 
+      [MAccidTipoLesion].[TipoLesion] AS [TipoLesion], 
+      [MAccidTipoLesion].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidTipoLesion] AS [MAccidTipoLesion]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MAccidTipoRiesgo" EntityType="BBDDAplicacion.Store.MAccidTipoRiesgo" store:Type="Tables" store:Schema="dbo" store:Name="MAccidTipoRiesgo">
+            <DefiningQuery>SELECT 
+      [MAccidTipoRiesgo].[IDTipodeRiesgo] AS [IDTipodeRiesgo], 
+      [MAccidTipoRiesgo].[TipoRiesgo] AS [TipoRiesgo], 
+      [MAccidTipoRiesgo].[Idioma] AS [Idioma]
+      FROM [dbo].[MAccidTipoRiesgo] AS [MAccidTipoRiesgo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MCentrosOperativos" EntityType="BBDDAplicacion.Store.MCentrosOperativos" store:Type="Tables" store:Schema="dbo" store:Name="MCentrosOperativos">
+            <DefiningQuery>SELECT 
+      [MCentrosOperativos].[IDCO] AS [IDCO], 
+      [MCentrosOperativos].[NCO] AS [NCO], 
+      [MCentrosOperativos].[CC] AS [CC], 
+      [MCentrosOperativos].[Idioma] AS [Idioma]
+      FROM [dbo].[MCentrosOperativos] AS [MCentrosOperativos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MDelegacion" EntityType="BBDDAplicacion.Store.MDelegacion" store:Type="Tables" store:Schema="dbo" store:Name="MDelegacion">
+            <DefiningQuery>SELECT 
+      [MDelegacion].[CC] AS [CC], 
+      [MDelegacion].[NDelegacion] AS [NDelegacion], 
+      [MDelegacion].[Division] AS [Division], 
+      [MDelegacion].[Idioma] AS [Idioma]
+      FROM [dbo].[MDelegacion] AS [MDelegacion]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MDiasSemana" EntityType="BBDDAplicacion.Store.MDiasSemana" store:Type="Tables" store:Schema="dbo" store:Name="MDiasSemana">
+            <DefiningQuery>SELECT 
+      [MDiasSemana].[IDDia] AS [IDDia], 
+      [MDiasSemana].[Dia] AS [Dia], 
+      [MDiasSemana].[Idioma] AS [Idioma]
+      FROM [dbo].[MDiasSemana] AS [MDiasSemana]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MDivision" EntityType="BBDDAplicacion.Store.MDivision" store:Type="Tables" store:Schema="dbo" store:Name="MDivision">
+            <DefiningQuery>SELECT 
+      [MDivision].[IDDivision] AS [IDDivision], 
+      [MDivision].[NDivision] AS [NDivision], 
+      [MDivision].[Idioma] AS [Idioma]
+      FROM [dbo].[MDivision] AS [MDivision]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MEmpresas" EntityType="BBDDAplicacion.Store.MEmpresas" store:Type="Tables" store:Schema="dbo" store:Name="MEmpresas">
+            <DefiningQuery>SELECT 
+      [MEmpresas].[IDEmpresa] AS [IDEmpresa], 
+      [MEmpresas].[NombreEmpresa] AS [NombreEmpresa]
+      FROM [dbo].[MEmpresas] AS [MEmpresas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MEtiquetas" EntityType="BBDDAplicacion.Store.MEtiquetas" store:Type="Tables" store:Schema="dbo" store:Name="MEtiquetas">
+            <DefiningQuery>SELECT 
+      [MEtiquetas].[Seccion] AS [Seccion], 
+      [MEtiquetas].[Nombre] AS [Nombre], 
+      [MEtiquetas].[Etiqueta] AS [Etiqueta], 
+      [MEtiquetas].[Idioma] AS [Idioma]
+      FROM [dbo].[MEtiquetas] AS [MEtiquetas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MPaises" EntityType="BBDDAplicacion.Store.MPaises" store:Type="Tables" store:Schema="dbo" store:Name="MPaises">
+            <DefiningQuery>SELECT 
+      [MPaises].[IDPais] AS [IDPais], 
+      [MPaises].[NPais] AS [NPais], 
+      [MPaises].[Idioma] AS [Idioma]
+      FROM [dbo].[MPaises] AS [MPaises]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MPersonal" EntityType="BBDDAplicacion.Store.MPersonal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MPersonalCategoria" EntityType="BBDDAplicacion.Store.MPersonalCategoria" store:Type="Tables" store:Schema="dbo" store:Name="MPersonalCategoria">
+            <DefiningQuery>SELECT 
+      [MPersonalCategoria].[IDCategoria] AS [IDCategoria], 
+      [MPersonalCategoria].[NCategoria] AS [NCategoria], 
+      [MPersonalCategoria].[Idioma] AS [Idioma]
+      FROM [dbo].[MPersonalCategoria] AS [MPersonalCategoria]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MSiNo" EntityType="BBDDAplicacion.Store.MSiNo" store:Type="Tables" store:Schema="dbo" store:Name="MSiNo">
+            <DefiningQuery>SELECT 
+      [MSiNo].[IDSiNo] AS [IDSiNo], 
+      [MSiNo].[Tipo] AS [Tipo], 
+      [MSiNo].[Idioma] AS [Idioma]
+      FROM [dbo].[MSiNo] AS [MSiNo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sysdiagrams" EntityType="BBDDAplicacion.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAccidentes" EntityType="BBDDAplicacion.Store.TAccidentes" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidActosInseguros' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidActosInseguros">
+          <Key>
+            <PropertyRef Name="IDActosInseguros" />
+            <PropertyRef Name="ActosInseguros" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDActosInseguros" Type="int" Nullable="false" />
+          <Property Name="ActosInseguros" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidClasificacionAccidente' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidClasificacionAccidente">
+          <Key>
+            <PropertyRef Name="IDClasifAccid" />
+            <PropertyRef Name="ClasificacionAccidente" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDClasifAccid" Type="int" Nullable="false" />
+          <Property Name="ClasificacionAccidente" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidCondicionesInseguras' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidCondicionesInseguras">
+          <Key>
+            <PropertyRef Name="IDCondInseguras" />
+            <PropertyRef Name="CondicionesInseguras" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDCondInseguras" Type="int" Nullable="false" />
+          <Property Name="CondicionesInseguras" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidConsecuencias' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidConsecuencias">
+          <Key>
+            <PropertyRef Name="IDConsecuencias" />
+            <PropertyRef Name="Consecuencias" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDConsecuencias" Type="int" Nullable="false" />
+          <Property Name="Consecuencias" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidEvaluarRiesgo' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidEvaluarRiesgo">
+          <Key>
+            <PropertyRef Name="IDEvalRiesgo" />
+            <PropertyRef Name="EvaluarRiesgo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDEvalRiesgo" Type="int" Nullable="false" />
+          <Property Name="EvaluarRiesgo" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidFormaSuceso' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidFormaSuceso">
+          <Key>
+            <PropertyRef Name="IDFormaSuceso" />
+            <PropertyRef Name="FormaSuceso" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDFormaSuceso" Type="int" Nullable="false" />
+          <Property Name="FormaSuceso" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidHora' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidHora">
+          <Key>
+            <PropertyRef Name="IDHora" />
+            <PropertyRef Name="Hora" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDHora" Type="int" Nullable="false" />
+          <Property Name="Hora" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidLugarTrabajo' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidLugarTrabajo">
+          <Key>
+            <PropertyRef Name="IDLugarTrabajo" />
+            <PropertyRef Name="LugarTrabajo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDLugarTrabajo" Type="int" Nullable="false" />
+          <Property Name="LugarTrabajo" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidParteLesionada' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidParteLesionada">
+          <Key>
+            <PropertyRef Name="IDParteLesionada" />
+            <PropertyRef Name="ParteLesionada" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDParteLesionada" Type="int" Nullable="false" />
+          <Property Name="ParteLesionada" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidTipoAccion' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidTipoAccion">
+          <Key>
+            <PropertyRef Name="IDTipodeAccion" />
+            <PropertyRef Name="TipodeAccion" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDTipodeAccion" Type="int" Nullable="false" />
+          <Property Name="TipodeAccion" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidTipoGrafico' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidTipoGrafico">
+          <Key>
+            <PropertyRef Name="IDTipoGrafico" />
+            <PropertyRef Name="NTipoGrafico" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDTipoGrafico" Type="int" Nullable="false" />
+          <Property Name="NTipoGrafico" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidTipoLesion' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidTipoLesion">
+          <Key>
+            <PropertyRef Name="IDTipoLesion" />
+            <PropertyRef Name="TipoLesion" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDTipoLesion" Type="int" Nullable="false" />
+          <Property Name="TipoLesion" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MAccidTipoRiesgo' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MAccidTipoRiesgo">
+          <Key>
+            <PropertyRef Name="IDTipodeRiesgo" />
+            <PropertyRef Name="TipoRiesgo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDTipodeRiesgo" Type="int" Nullable="false" />
+          <Property Name="TipoRiesgo" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MCentrosOperativos' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MCentrosOperativos">
+          <Key>
+            <PropertyRef Name="IDCO" />
+            <PropertyRef Name="NCO" />
+            <PropertyRef Name="CC" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDCO" Type="int" Nullable="false" />
+          <Property Name="NCO" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CC" Type="int" Nullable="false" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MDelegacion' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MDelegacion">
+          <Key>
+            <PropertyRef Name="CC" />
+            <PropertyRef Name="NDelegacion" />
+            <PropertyRef Name="Division" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="CC" Type="int" Nullable="false" />
+          <Property Name="NDelegacion" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Division" Type="int" Nullable="false" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MDiasSemana' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MDiasSemana">
+          <Key>
+            <PropertyRef Name="IDDia" />
+            <PropertyRef Name="Dia" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDDia" Type="int" Nullable="false" />
+          <Property Name="Dia" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MDivision' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MDivision">
+          <Key>
+            <PropertyRef Name="IDDivision" />
+            <PropertyRef Name="NDivision" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDDivision" Type="int" Nullable="false" />
+          <Property Name="NDivision" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MEmpresas' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MEmpresas">
+          <Key>
+            <PropertyRef Name="IDEmpresa" />
+            <PropertyRef Name="NombreEmpresa" />
+          </Key>
+          <Property Name="IDEmpresa" Type="nvarchar" Nullable="false" MaxLength="2" />
+          <Property Name="NombreEmpresa" Type="nvarchar" Nullable="false" MaxLength="70" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MEtiquetas' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MEtiquetas">
+          <Key>
+            <PropertyRef Name="Nombre" />
+            <PropertyRef Name="Etiqueta" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="Seccion" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Etiqueta" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MPaises' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MPaises">
+          <Key>
+            <PropertyRef Name="IDPais" />
+            <PropertyRef Name="NPais" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDPais" Type="int" Nullable="false" />
+          <Property Name="NPais" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="MPersonal">
+          <Key>
+            <PropertyRef Name="NIFTrabajador" />
+          </Key>
+          <Property Name="NIFTrabajador" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Apellidos" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="Categoria" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FechaNacimiento" Type="date" Nullable="false" />
+          <Property Name="Fbaja" Type="date" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MPersonalCategoria' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MPersonalCategoria">
+          <Key>
+            <PropertyRef Name="IDCategoria" />
+            <PropertyRef Name="NCategoria" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDCategoria" Type="int" Nullable="false" />
+          <Property Name="NCategoria" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Intranet.dbo.MSiNo' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="MSiNo">
+          <Key>
+            <PropertyRef Name="IDSiNo" />
+            <PropertyRef Name="Tipo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Name="IDSiNo" Type="int" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" Nullable="false" MaxLength="3" />
+          <Property Name="Idioma" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TAccidentes">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BO" Type="nvarchar" MaxLength="50" />
+          <Property Name="FechaRegistro" Type="date" />
+          <Property Name="Subcontratista" Type="int" />
+          <Property Name="NombreSubcontrata" Type="nvarchar" MaxLength="140" />
+          <Property Name="NIFTrabajador" Type="nvarchar" MaxLength="10" />
+          <Property Name="Apellidos" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="25" />
+          <Property Name="Categoria" Type="nvarchar" MaxLength="50" />
+          <Property Name="PuestoTrabajo" Type="nvarchar" MaxLength="140" />
+          <Property Name="TrabajoRealizaba" Type="nvarchar" MaxLength="140" />
+          <Property Name="ExperienciaPuesto" Type="nvarchar" MaxLength="140" />
+          <Property Name="Antiguedad" Type="int" />
+          <Property Name="MandoSuperior" Type="nvarchar" MaxLength="140" />
+          <Property Name="FechaAccidente" Type="date" />
+          <Property Name="Hora" Type="int" />
+          <Property Name="DiaSemana" Type="int" />
+          <Property Name="TrabajoHabitual" Type="int" />
+          <Property Name="Clasificacion" Type="int" />
+          <Property Name="FechaBaja" Type="date" />
+          <Property Name="FechaAlta" Type="date" />
+          <Property Name="JornadasPerdidas" Type="int" />
+          <Property Name="LugardeTrabajo" Type="int" />
+          <Property Name="OtroLugarTtrabajo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Consecuencias" Type="int" />
+          <Property Name="Edad" Type="int" />
+          <Property Name="Descripcion" Type="nvarchar" />
+          <Property Name="ParteLesionada" Type="nvarchar" MaxLength="255" />
+          <Property Name="TipoLesion" Type="nvarchar" MaxLength="255" />
+          <Property Name="ActosInseguros" Type="nvarchar" MaxLength="255" />
+          <Property Name="CondicionesInseguras" Type="nvarchar" MaxLength="255" />
+          <Property Name="FormaSuceso" Type="nvarchar" MaxLength="255" />
+          <Property Name="TipoRiesgo" Type="nvarchar" MaxLength="255" />
+          <Property Name="IdentificadoRiesgoEvaluacion" Type="int" />
+          <Property Name="EvaluarRiesgos" Type="int" />
+          <Property Name="FormadoInformadoRiesgo" Type="int" />
+          <Property Name="EquiposProteccionDefinidosActividad" Type="int" />
+          <Property Name="Seevacuoelaccidentadorapidaycorrectamente" Type="int" />
+          <Property Name="AtendidoAmbulanciaServiciosdeUrgencia" Type="int" />
+          <Property Name="ConsecuenciaRiesgoElectricoAltura" Type="int" />
+          <Property Name="ExisteProcedimientoTrabajoActividad" Type="int" />
+          <Property Name="EquipoInvestigacion1Apellidos" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion1Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion1PuestoTrabajo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion2Apellidos" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion2Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion2PuestoTrabajo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion3Apellidos" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion3Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipoInvestigacion3PuestoTrabajo" Type="nvarchar" MaxLength="50" />
+          <Property Name="UsuarioCreador" Type="nvarchar" MaxLength="140" />
+          <Property Name="UsuarioModificador1" Type="nvarchar" MaxLength="140" />
+          <Property Name="Fecha" Type="datetime" />
+        </EntityType>
+        <Function Name="AccidentesConsulta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Idioma" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="AccidentesCrear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="BO" Type="nvarchar" Mode="In" />
+          <Parameter Name="FechaRegistro" Type="date" Mode="In" />
+          <Parameter Name="Subcontratista" Type="int" Mode="In" />
+          <Parameter Name="NombreSubcontrata" Type="nvarchar" Mode="In" />
+          <Parameter Name="NIFTrabajador" Type="nvarchar" Mode="In" />
+          <Parameter Name="Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="Categoria" Type="nvarchar" Mode="In" />
+          <Parameter Name="PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="TrabajoRealizaba" Type="nvarchar" Mode="In" />
+          <Parameter Name="ExperienciaPuesto" Type="nvarchar" Mode="In" />
+          <Parameter Name="Antiguedad" Type="int" Mode="In" />
+          <Parameter Name="MandoSuperior" Type="nvarchar" Mode="In" />
+          <Parameter Name="FechaAccidente" Type="date" Mode="In" />
+          <Parameter Name="Hora" Type="int" Mode="In" />
+          <Parameter Name="DiaSemana" Type="int" Mode="In" />
+          <Parameter Name="TrabajoHabitual" Type="int" Mode="In" />
+          <Parameter Name="Clasificacion" Type="int" Mode="In" />
+          <Parameter Name="FechaBaja" Type="date" Mode="In" />
+          <Parameter Name="FechaAlta" Type="date" Mode="In" />
+          <Parameter Name="JornadasPerdidas" Type="int" Mode="In" />
+          <Parameter Name="LugardeTrabajo" Type="int" Mode="In" />
+          <Parameter Name="OtroLugarTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="Consecuencias" Type="int" Mode="In" />
+          <Parameter Name="Edad" Type="int" Mode="In" />
+          <Parameter Name="Descripcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="ParteLesionada" Type="nvarchar" Mode="In" />
+          <Parameter Name="TipoLesion" Type="nvarchar" Mode="In" />
+          <Parameter Name="ActosInseguros" Type="nvarchar" Mode="In" />
+          <Parameter Name="CondicionesInseguras" Type="nvarchar" Mode="In" />
+          <Parameter Name="FormaSuceso" Type="nvarchar" Mode="In" />
+          <Parameter Name="TipoRiesgo" Type="nvarchar" Mode="In" />
+          <Parameter Name="IdentificadoRiesgoEvaluacion" Type="int" Mode="In" />
+          <Parameter Name="EvaluarRiesgos" Type="int" Mode="In" />
+          <Parameter Name="FormadoInformadoRiesgo" Type="int" Mode="In" />
+          <Parameter Name="EquiposProteccionDefinidosActividad" Type="int" Mode="In" />
+          <Parameter Name="Seevacuoelaccidentadorapidaycorrectamente" Type="int" Mode="In" />
+          <Parameter Name="AtendidoAmbulanciaServiciosdeUrgencia" Type="int" Mode="In" />
+          <Parameter Name="ConsecuenciaRiesgoElectricoAltura" Type="int" Mode="In" />
+          <Parameter Name="ExisteProcedimientoTrabajoActividad" Type="int" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="UsuarioCreador" Type="nvarchar" Mode="In" />
+          <Parameter Name="UsuarioModificador1" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fecha" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="AccidentesGetXBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDBO" Type="nvarchar" Mode="In" />
+          <Parameter Name="Idioma" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="AccidentesLeer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="AccidentesModificar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Codigo" Type="int" Mode="In" />
+          <Parameter Name="BO" Type="nvarchar" Mode="In" />
+          <Parameter Name="FechaRegistro" Type="date" Mode="In" />
+          <Parameter Name="Subcontratista" Type="int" Mode="In" />
+          <Parameter Name="NombreSubcontrata" Type="nvarchar" Mode="In" />
+          <Parameter Name="NIFTrabajador" Type="nvarchar" Mode="In" />
+          <Parameter Name="Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="Categoria" Type="nvarchar" Mode="In" />
+          <Parameter Name="PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="TrabajoRealizaba" Type="nvarchar" Mode="In" />
+          <Parameter Name="ExperienciaPuesto" Type="nvarchar" Mode="In" />
+          <Parameter Name="Antiguedad" Type="int" Mode="In" />
+          <Parameter Name="MandoSuperior" Type="nvarchar" Mode="In" />
+          <Parameter Name="FechaAccidente" Type="date" Mode="In" />
+          <Parameter Name="Hora" Type="int" Mode="In" />
+          <Parameter Name="DiaSemana" Type="int" Mode="In" />
+          <Parameter Name="TrabajoHabitual" Type="int" Mode="In" />
+          <Parameter Name="Clasificacion" Type="int" Mode="In" />
+          <Parameter Name="FechaBaja" Type="date" Mode="In" />
+          <Parameter Name="FechaAlta" Type="date" Mode="In" />
+          <Parameter Name="JornadasPerdidas" Type="int" Mode="In" />
+          <Parameter Name="LugardeTrabajo" Type="int" Mode="In" />
+          <Parameter Name="OtroLugarTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="Consecuencias" Type="int" Mode="In" />
+          <Parameter Name="Edad" Type="int" Mode="In" />
+          <Parameter Name="Descripcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="ParteLesionada" Type="nvarchar" Mode="In" />
+          <Parameter Name="TipoLesion" Type="nvarchar" Mode="In" />
+          <Parameter Name="ActosInseguros" Type="nvarchar" Mode="In" />
+          <Parameter Name="CondicionesInseguras" Type="nvarchar" Mode="In" />
+          <Parameter Name="FormaSuceso" Type="nvarchar" Mode="In" />
+          <Parameter Name="TipoRiesgo" Type="nvarchar" Mode="In" />
+          <Parameter Name="IdentificadoRiesgoEvaluacion" Type="int" Mode="In" />
+          <Parameter Name="EvaluarRiesgos" Type="int" Mode="In" />
+          <Parameter Name="FormadoInformadoRiesgo" Type="int" Mode="In" />
+          <Parameter Name="EquiposProteccionDefinidosActividad" Type="int" Mode="In" />
+          <Parameter Name="Seevacuoelaccidentadorapidaycorrectamente" Type="int" Mode="In" />
+          <Parameter Name="AtendidoAmbulanciaServiciosdeUrgencia" Type="int" Mode="In" />
+          <Parameter Name="ConsecuenciaRiesgoElectricoAltura" Type="int" Mode="In" />
+          <Parameter Name="ExisteProcedimientoTrabajoActividad" Type="int" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion1PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion2PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="EquipoInvestigacion3PuestoTrabajo" Type="nvarchar" Mode="In" />
+          <Parameter Name="UsuarioCreador" Type="nvarchar" Mode="In" />
+          <Parameter Name="UsuarioModificador1" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fecha" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PersonalGETxNIF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NIF" Type="nvarchar" Mode="In" />
+          <Parameter Name="Idioma" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Intranet.dbo.MBO' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="MBO">
+        <Property Name="BO" Type="nvarchar" MaxLength="50" />
+        <Property Name="NBO" Type="nvarchar" MaxLength="255" />
+        <Property Name="IDEmpresa" Type="nvarchar" MaxLength="2" />
+        <Property Name="CO" Type="int" />
+        <Property Name="IDCliente" Type="nvarchar" MaxLength="50" />
+        <Property Name="Tipo" Type="nvarchar" MaxLength="50" />
+        <Property Name="CodPais" Type="nvarchar" MaxLength="3" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Intranet.dbo.TAccionesInmediatas' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="TAccionesInmediatas">
+        <Property Name="ID" Type="int" />
+        <Property Name="Codigo" Type="int" />
+        <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+        <Property Name="Responsable" Type="nvarchar" MaxLength="140" />
+        <Property Name="FechaInicio" Type="datetime" />
+        <Property Name="PlazoEjecucion" Type="datetime" />
+      </EntityType>-->
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BBDDAplicacion" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BBDDCYMIMASA" p1:LazyLoadingEnabled="true">
+          <FunctionImport Name="AccidentesGetXBO" ReturnType="Collection(BBDDAplicacion.AccidentesGetXBO_Result)">
+            <Parameter Name="IDBO" Mode="In" Type="String" />
+            <Parameter Name="Idioma" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BBDDAplicacion.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BBDDAplicacion.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <FunctionImport Name="PersonalGETxNIF" ReturnType="Collection(BBDDAplicacion.PersonalGETxNIF_Result)">
+            <Parameter Name="NIF" Mode="In" Type="String" />
+            <Parameter Name="Idioma" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="AccidentesCrear">
+            <Parameter Name="BO" Mode="In" Type="String" />
+            <Parameter Name="FechaRegistro" Mode="In" Type="DateTime" />
+            <Parameter Name="Subcontratista" Mode="In" Type="Int32" />
+            <Parameter Name="NombreSubcontrata" Mode="In" Type="String" />
+            <Parameter Name="NIFTrabajador" Mode="In" Type="String" />
+            <Parameter Name="Apellidos" Mode="In" Type="String" />
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="Categoria" Mode="In" Type="String" />
+            <Parameter Name="PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="TrabajoRealizaba" Mode="In" Type="String" />
+            <Parameter Name="ExperienciaPuesto" Mode="In" Type="String" />
+            <Parameter Name="Antiguedad" Mode="In" Type="Int32" />
+            <Parameter Name="MandoSuperior" Mode="In" Type="String" />
+            <Parameter Name="FechaAccidente" Mode="In" Type="DateTime" />
+            <Parameter Name="Hora" Mode="In" Type="Int32" />
+            <Parameter Name="DiaSemana" Mode="In" Type="Int32" />
+            <Parameter Name="TrabajoHabitual" Mode="In" Type="Int32" />
+            <Parameter Name="Clasificacion" Mode="In" Type="Int32" />
+            <Parameter Name="FechaBaja" Mode="In" Type="DateTime" />
+            <Parameter Name="FechaAlta" Mode="In" Type="DateTime" />
+            <Parameter Name="JornadasPerdidas" Mode="In" Type="Int32" />
+            <Parameter Name="LugardeTrabajo" Mode="In" Type="Int32" />
+            <Parameter Name="OtroLugarTrabajo" Mode="In" Type="String" />
+            <Parameter Name="Consecuencias" Mode="In" Type="Int32" />
+            <Parameter Name="Edad" Mode="In" Type="Int32" />
+            <Parameter Name="Descripcion" Mode="In" Type="String" />
+            <Parameter Name="ParteLesionada" Mode="In" Type="String" />
+            <Parameter Name="TipoLesion" Mode="In" Type="String" />
+            <Parameter Name="ActosInseguros" Mode="In" Type="String" />
+            <Parameter Name="CondicionesInseguras" Mode="In" Type="String" />
+            <Parameter Name="FormaSuceso" Mode="In" Type="String" />
+            <Parameter Name="TipoRiesgo" Mode="In" Type="String" />
+            <Parameter Name="IdentificadoRiesgoEvaluacion" Mode="In" Type="Int32" />
+            <Parameter Name="EvaluarRiesgos" Mode="In" Type="Int32" />
+            <Parameter Name="FormadoInformadoRiesgo" Mode="In" Type="Int32" />
+            <Parameter Name="EquiposProteccionDefinidosActividad" Mode="In" Type="Int32" />
+            <Parameter Name="Seevacuoelaccidentadorapidaycorrectamente" Mode="In" Type="Int32" />
+            <Parameter Name="AtendidoAmbulanciaServiciosdeUrgencia" Mode="In" Type="Int32" />
+            <Parameter Name="ConsecuenciaRiesgoElectricoAltura" Mode="In" Type="Int32" />
+            <Parameter Name="ExisteProcedimientoTrabajoActividad" Mode="In" Type="Int32" />
+            <Parameter Name="EquipoInvestigacion1Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion1Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion1PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="UsuarioCreador" Mode="In" Type="String" />
+            <Parameter Name="UsuarioModificador1" Mode="In" Type="String" />
+            <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="AccidentesModificar">
+            <Parameter Name="Codigo" Mode="In" Type="Int32" />
+            <Parameter Name="BO" Mode="In" Type="String" />
+            <Parameter Name="FechaRegistro" Mode="In" Type="DateTime" />
+            <Parameter Name="Subcontratista" Mode="In" Type="Int32" />
+            <Parameter Name="NombreSubcontrata" Mode="In" Type="String" />
+            <Parameter Name="NIFTrabajador" Mode="In" Type="String" />
+            <Parameter Name="Apellidos" Mode="In" Type="String" />
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="Categoria" Mode="In" Type="String" />
+            <Parameter Name="PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="TrabajoRealizaba" Mode="In" Type="String" />
+            <Parameter Name="ExperienciaPuesto" Mode="In" Type="String" />
+            <Parameter Name="Antiguedad" Mode="In" Type="Int32" />
+            <Parameter Name="MandoSuperior" Mode="In" Type="String" />
+            <Parameter Name="FechaAccidente" Mode="In" Type="DateTime" />
+            <Parameter Name="Hora" Mode="In" Type="Int32" />
+            <Parameter Name="DiaSemana" Mode="In" Type="Int32" />
+            <Parameter Name="TrabajoHabitual" Mode="In" Type="Int32" />
+            <Parameter Name="Clasificacion" Mode="In" Type="Int32" />
+            <Parameter Name="FechaBaja" Mode="In" Type="DateTime" />
+            <Parameter Name="FechaAlta" Mode="In" Type="DateTime" />
+            <Parameter Name="JornadasPerdidas" Mode="In" Type="Int32" />
+            <Parameter Name="LugardeTrabajo" Mode="In" Type="Int32" />
+            <Parameter Name="OtroLugarTrabajo" Mode="In" Type="String" />
+            <Parameter Name="Consecuencias" Mode="In" Type="Int32" />
+            <Parameter Name="Edad" Mode="In" Type="Int32" />
+            <Parameter Name="Descripcion" Mode="In" Type="String" />
+            <Parameter Name="ParteLesionada" Mode="In" Type="String" />
+            <Parameter Name="TipoLesion" Mode="In" Type="String" />
+            <Parameter Name="ActosInseguros" Mode="In" Type="String" />
+            <Parameter Name="CondicionesInseguras" Mode="In" Type="String" />
+            <Parameter Name="FormaSuceso" Mode="In" Type="String" />
+            <Parameter Name="TipoRiesgo" Mode="In" Type="String" />
+            <Parameter Name="IdentificadoRiesgoEvaluacion" Mode="In" Type="Int32" />
+            <Parameter Name="EvaluarRiesgos" Mode="In" Type="Int32" />
+            <Parameter Name="FormadoInformadoRiesgo" Mode="In" Type="Int32" />
+            <Parameter Name="EquiposProteccionDefinidosActividad" Mode="In" Type="Int32" />
+            <Parameter Name="Seevacuoelaccidentadorapidaycorrectamente" Mode="In" Type="Int32" />
+            <Parameter Name="AtendidoAmbulanciaServiciosdeUrgencia" Mode="In" Type="Int32" />
+            <Parameter Name="ConsecuenciaRiesgoElectricoAltura" Mode="In" Type="Int32" />
+            <Parameter Name="ExisteProcedimientoTrabajoActividad" Mode="In" Type="Int32" />
+            <Parameter Name="EquipoInvestigacion1Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion1Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion1PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion2PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3Apellidos" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3Nombre" Mode="In" Type="String" />
+            <Parameter Name="EquipoInvestigacion3PuestoTrabajo" Mode="In" Type="String" />
+            <Parameter Name="UsuarioCreador" Mode="In" Type="String" />
+            <Parameter Name="UsuarioModificador1" Mode="In" Type="String" />
+            <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="AccidentesConsulta" ReturnType="Collection(BBDDAplicacion.AccidentesConsulta_Result)">
+          <Parameter Name="Idioma" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="MAccidActosInseguros" EntityType="BBDDAplicacion.MAccidActosInseguros" />
+          <EntitySet Name="MAccidClasificacionAccidente" EntityType="BBDDAplicacion.MAccidClasificacionAccidente" />
+          <EntitySet Name="MAccidCondicionesInseguras" EntityType="BBDDAplicacion.MAccidCondicionesInseguras" />
+          <EntitySet Name="MAccidConsecuencias" EntityType="BBDDAplicacion.MAccidConsecuencias" />
+          <EntitySet Name="MAccidEvaluarRiesgo" EntityType="BBDDAplicacion.MAccidEvaluarRiesgo" />
+          <EntitySet Name="MAccidFormaSuceso" EntityType="BBDDAplicacion.MAccidFormaSuceso" />
+          <EntitySet Name="MAccidHora" EntityType="BBDDAplicacion.MAccidHora" />
+          <EntitySet Name="MAccidLugarTrabajo" EntityType="BBDDAplicacion.MAccidLugarTrabajo" />
+          <EntitySet Name="MAccidParteLesionada" EntityType="BBDDAplicacion.MAccidParteLesionada" />
+          <EntitySet Name="MAccidTipoAccion" EntityType="BBDDAplicacion.MAccidTipoAccion" />
+          <EntitySet Name="MAccidTipoGrafico" EntityType="BBDDAplicacion.MAccidTipoGrafico" />
+          <EntitySet Name="MAccidTipoLesion" EntityType="BBDDAplicacion.MAccidTipoLesion" />
+          <EntitySet Name="MAccidTipoRiesgo" EntityType="BBDDAplicacion.MAccidTipoRiesgo" />
+          <EntitySet Name="MCentrosOperativos" EntityType="BBDDAplicacion.MCentrosOperativos" />
+          <EntitySet Name="MDelegacion" EntityType="BBDDAplicacion.MDelegacion" />
+          <EntitySet Name="MDiasSemana" EntityType="BBDDAplicacion.MDiasSemana" />
+          <EntitySet Name="MDivision" EntityType="BBDDAplicacion.MDivision" />
+          <EntitySet Name="MEmpresas" EntityType="BBDDAplicacion.MEmpresas" />
+          <EntitySet Name="MEtiquetas" EntityType="BBDDAplicacion.MEtiquetas" />
+          <EntitySet Name="MPaises" EntityType="BBDDAplicacion.MPaises" />
+          <EntitySet Name="MPersonal" EntityType="BBDDAplicacion.MPersonal" />
+          <EntitySet Name="MPersonalCategoria" EntityType="BBDDAplicacion.MPersonalCategoria" />
+          <EntitySet Name="MSiNo" EntityType="BBDDAplicacion.MSiNo" />
+          <EntitySet Name="sysdiagrams" EntityType="BBDDAplicacion.sysdiagrams" />
+          <EntitySet Name="TAccidentes" EntityType="BBDDAplicacion.TAccidentes" />
+          <FunctionImport Name="AccidentesLeer" ReturnType="Collection(BBDDAplicacion.AccidentesLeer_Result)">
+            <Parameter Name="Codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          </EntityContainer>
+        <ComplexType Name="AccidentesGetXBO_Result">
+          <Property Type="String" Name="BO" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NBO" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="NombreEmpresa" Nullable="false" MaxLength="70" />
+          <Property Type="String" Name="NCO" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="NDelegacion" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="NDivision" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="PersonalGETxNIF_Result">
+          <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+          <Property Type="DateTime" Name="FechaNacimiento" Nullable="false" />
+          <Property Type="String" Name="NCategoria" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="AccidentesConsulta_Result">
+          <Property Type="Int32" Name="IDAutomatico" Nullable="false" />
+          <Property Type="String" Name="BO" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="NCO" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="NDelegacion" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAccidente" Nullable="false" />
+          <Property Type="String" Name="ClasificacionAccidente" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="NIFTrabajador" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="FechaAccidente1" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="MAccidActosInseguros">
+          <Key>
+            <PropertyRef Name="IDActosInseguros" />
+            <PropertyRef Name="ActosInseguros" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDActosInseguros" Nullable="false" />
+          <Property Type="String" Name="ActosInseguros" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidClasificacionAccidente">
+          <Key>
+            <PropertyRef Name="IDClasifAccid" />
+            <PropertyRef Name="ClasificacionAccidente" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDClasifAccid" Nullable="false" />
+          <Property Type="String" Name="ClasificacionAccidente" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidCondicionesInseguras">
+          <Key>
+            <PropertyRef Name="IDCondInseguras" />
+            <PropertyRef Name="CondicionesInseguras" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDCondInseguras" Nullable="false" />
+          <Property Type="String" Name="CondicionesInseguras" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidConsecuencias">
+          <Key>
+            <PropertyRef Name="IDConsecuencias" />
+            <PropertyRef Name="Consecuencias" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDConsecuencias" Nullable="false" />
+          <Property Type="String" Name="Consecuencias" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidEvaluarRiesgo">
+          <Key>
+            <PropertyRef Name="IDEvalRiesgo" />
+            <PropertyRef Name="EvaluarRiesgo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDEvalRiesgo" Nullable="false" />
+          <Property Type="String" Name="EvaluarRiesgo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidFormaSuceso">
+          <Key>
+            <PropertyRef Name="IDFormaSuceso" />
+            <PropertyRef Name="FormaSuceso" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDFormaSuceso" Nullable="false" />
+          <Property Type="String" Name="FormaSuceso" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidHora">
+          <Key>
+            <PropertyRef Name="IDHora" />
+            <PropertyRef Name="Hora" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDHora" Nullable="false" />
+          <Property Type="String" Name="Hora" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidLugarTrabajo">
+          <Key>
+            <PropertyRef Name="IDLugarTrabajo" />
+            <PropertyRef Name="LugarTrabajo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDLugarTrabajo" Nullable="false" />
+          <Property Type="String" Name="LugarTrabajo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidParteLesionada">
+          <Key>
+            <PropertyRef Name="IDParteLesionada" />
+            <PropertyRef Name="ParteLesionada" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDParteLesionada" Nullable="false" />
+          <Property Type="String" Name="ParteLesionada" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidTipoAccion">
+          <Key>
+            <PropertyRef Name="IDTipodeAccion" />
+            <PropertyRef Name="TipodeAccion" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDTipodeAccion" Nullable="false" />
+          <Property Type="String" Name="TipodeAccion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidTipoGrafico">
+          <Key>
+            <PropertyRef Name="IDTipoGrafico" />
+            <PropertyRef Name="NTipoGrafico" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDTipoGrafico" Nullable="false" />
+          <Property Type="String" Name="NTipoGrafico" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidTipoLesion">
+          <Key>
+            <PropertyRef Name="IDTipoLesion" />
+            <PropertyRef Name="TipoLesion" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDTipoLesion" Nullable="false" />
+          <Property Type="String" Name="TipoLesion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAccidTipoRiesgo">
+          <Key>
+            <PropertyRef Name="IDTipodeRiesgo" />
+            <PropertyRef Name="TipoRiesgo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDTipodeRiesgo" Nullable="false" />
+          <Property Type="String" Name="TipoRiesgo" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MCentrosOperativos">
+          <Key>
+            <PropertyRef Name="IDCO" />
+            <PropertyRef Name="NCO" />
+            <PropertyRef Name="CC" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDCO" Nullable="false" />
+          <Property Type="String" Name="NCO" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CC" Nullable="false" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MDelegacion">
+          <Key>
+            <PropertyRef Name="CC" />
+            <PropertyRef Name="NDelegacion" />
+            <PropertyRef Name="Division" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="CC" Nullable="false" />
+          <Property Type="String" Name="NDelegacion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Division" Nullable="false" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MDiasSemana">
+          <Key>
+            <PropertyRef Name="IDDia" />
+            <PropertyRef Name="Dia" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDDia" Nullable="false" />
+          <Property Type="String" Name="Dia" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MDivision">
+          <Key>
+            <PropertyRef Name="IDDivision" />
+            <PropertyRef Name="NDivision" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDDivision" Nullable="false" />
+          <Property Type="String" Name="NDivision" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MEmpresas">
+          <Key>
+            <PropertyRef Name="IDEmpresa" />
+            <PropertyRef Name="NombreEmpresa" />
+          </Key>
+          <Property Type="String" Name="IDEmpresa" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NombreEmpresa" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MEtiquetas">
+          <Key>
+            <PropertyRef Name="Nombre" />
+            <PropertyRef Name="Etiqueta" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="String" Name="Seccion" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Etiqueta" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MPaises">
+          <Key>
+            <PropertyRef Name="IDPais" />
+            <PropertyRef Name="NPais" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDPais" Nullable="false" />
+          <Property Type="String" Name="NPais" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MPersonal">
+          <Key>
+            <PropertyRef Name="NIFTrabajador" />
+          </Key>
+          <Property Type="String" Name="NIFTrabajador" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Categoria" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FechaNacimiento" Nullable="false" Precision="0" />
+          <Property Type="DateTime" Name="Fbaja" Precision="0" />
+        </EntityType>
+        <EntityType Name="MPersonalCategoria">
+          <Key>
+            <PropertyRef Name="IDCategoria" />
+            <PropertyRef Name="NCategoria" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDCategoria" Nullable="false" />
+          <Property Type="String" Name="NCategoria" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MSiNo">
+          <Key>
+            <PropertyRef Name="IDSiNo" />
+            <PropertyRef Name="Tipo" />
+            <PropertyRef Name="Idioma" />
+          </Key>
+          <Property Type="Int32" Name="IDSiNo" Nullable="false" />
+          <Property Type="String" Name="Tipo" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Idioma" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="principal_id" Nullable="false" />
+          <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="version" />
+          <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TAccidentes">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Type="Int32" Name="Codigo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BO" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FechaRegistro" Precision="0" />
+          <Property Type="Int32" Name="Subcontratista" />
+          <Property Type="String" Name="NombreSubcontrata" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIFTrabajador" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Apellidos" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Nombre" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Categoria" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PuestoTrabajo" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TrabajoRealizaba" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ExperienciaPuesto" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Antiguedad" />
+          <Property Type="String" Name="MandoSuperior" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FechaAccidente" Precision="0" />
+          <Property Type="Int32" Name="Hora" />
+          <Property Type="Int32" Name="DiaSemana" />
+          <Property Type="Int32" Name="TrabajoHabitual" />
+          <Property Type="Int32" Name="Clasificacion" />
+          <Property Type="DateTime" Name="FechaBaja" Precision="0" />
+          <Property Type="DateTime" Name="FechaAlta" Precision="0" />
+          <Property Type="Int32" Name="JornadasPerdidas" />
+          <Property Type="Int32" Name="LugardeTrabajo" />
+          <Property Type="String" Name="OtroLugarTtrabajo" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Consecuencias" />
+          <Property Type="Int32" Name="Edad" />
+          <Property Type="String" Name="Descripcion" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ParteLesionada" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TipoLesion" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ActosInseguros" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CondicionesInseguras" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FormaSuceso" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TipoRiesgo" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IdentificadoRiesgoEvaluacion" />
+          <Property Type="Int32" Name="EvaluarRiesgos" />
+          <Property Type="Int32" Name="FormadoInformadoRiesgo" />
+          <Property Type="Int32" Name="EquiposProteccionDefinidosActividad" />
+          <Property Type="Int32" Name="Seevacuoelaccidentadorapidaycorrectamente" />
+          <Property Type="Int32" Name="AtendidoAmbulanciaServiciosdeUrgencia" />
+          <Property Type="Int32" Name="ConsecuenciaRiesgoElectricoAltura" />
+          <Property Type="Int32" Name="ExisteProcedimientoTrabajoActividad" />
+          <Property Type="String" Name="EquipoInvestigacion1Apellidos" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion1Nombre" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion1PuestoTrabajo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion2Apellidos" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion2Nombre" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion2PuestoTrabajo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion3Apellidos" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion3Nombre" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EquipoInvestigacion3PuestoTrabajo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UsuarioCreador" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UsuarioModificador1" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Fecha" Precision="3" />
+        </EntityType>
+        <ComplexType Name="AccidentesLeer_Result">
+          <Property Type="Int32" Name="Codigo" Nullable="false" />
+          <Property Type="String" Name="BO" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaRegistro" Nullable="true" />
+          <Property Type="Int32" Name="Subcontratista" Nullable="true" />
+          <Property Type="String" Name="NombreSubcontrata" Nullable="true" MaxLength="140" />
+          <Property Type="String" Name="NIFTrabajador" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Apellidos" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="25" />
+          <Property Type="String" Name="Categoria" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="PuestoTrabajo" Nullable="true" MaxLength="140" />
+          <Property Type="String" Name="TrabajoRealizaba" Nullable="true" MaxLength="140" />
+          <Property Type="String" Name="ExperienciaPuesto" Nullable="true" MaxLength="140" />
+          <Property Type="Int32" Name="Antiguedad" Nullable="true" />
+          <Property Type="String" Name="MandoSuperior" Nullable="true" MaxLength="140" />
+          <Property Type="DateTime" Name="FechaAccidente" Nullable="true" />
+          <Property Type="Int32" Name="Hora" Nullable="true" />
+          <Property Type="Int32" Name="DiaSemana" Nullable="true" />
+          <Property Type="Int32" Name="TrabajoHabitual" Nullable="true" />
+          <Property Type="Int32" Name="Clasificacion" Nullable="true" />
+          <Property Type="DateTime" Name="FechaBaja" Nullable="true" />
+          <Property Type="DateTime" Name="FechaAlta" Nullable="true" />
+          <Property Type="Int32" Name="JornadasPerdidas" Nullable="true" />
+          <Property Type="Int32" Name="LugardeTrabajo" Nullable="true" />
+          <Property Type="String" Name="OtroLugarTtrabajo" Nullable="true" MaxLength="255" />
+          <Property Type="Int32" Name="Consecuencias" Nullable="true" />
+          <Property Type="Int32" Name="Edad" Nullable="true" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="ParteLesionada" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TipoLesion" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="ActosInseguros" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="CondicionesInseguras" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="FormaSuceso" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TipoRiesgo" Nullable="true" MaxLength="255" />
+          <Property Type="Int32" Name="IdentificadoRiesgoEvaluacion" Nullable="true" />
+          <Property Type="Int32" Name="EvaluarRiesgos" Nullable="true" />
+          <Property Type="Int32" Name="FormadoInformadoRiesgo" Nullable="true" />
+          <Property Type="Int32" Name="EquiposProteccionDefinidosActividad" Nullable="true" />
+          <Property Type="Int32" Name="Seevacuoelaccidentadorapidaycorrectamente" Nullable="true" />
+          <Property Type="Int32" Name="AtendidoAmbulanciaServiciosdeUrgencia" Nullable="true" />
+          <Property Type="Int32" Name="ConsecuenciaRiesgoElectricoAltura" Nullable="true" />
+          <Property Type="Int32" Name="ExisteProcedimientoTrabajoActividad" Nullable="true" />
+          <Property Type="String" Name="EquipoInvestigacion1Apellidos" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion1Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion1PuestoTrabajo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion2Apellidos" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion2Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion2PuestoTrabajo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion3Apellidos" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion3Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EquipoInvestigacion3PuestoTrabajo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UsuarioCreador" Nullable="true" MaxLength="140" />
+          <Property Type="String" Name="UsuarioModificador1" Nullable="true" MaxLength="140" />
+          <Property Type="DateTime" Name="Fecha" Nullable="true" Precision="23" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BBDDAplicacionStoreContainer" CdmEntityContainer="BBDDCYMIMASA">
+          <FunctionImportMapping FunctionImportName="AccidentesGetXBO" FunctionName="BBDDAplicacion.Store.AccidentesGetXBO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.AccidentesGetXBO_Result">
+                <ScalarProperty Name="BO" ColumnName="BO" />
+                <ScalarProperty Name="NBO" ColumnName="NBO" />
+                <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+                <ScalarProperty Name="NCO" ColumnName="NCO" />
+                <ScalarProperty Name="NDelegacion" ColumnName="NDelegacion" />
+                <ScalarProperty Name="NDivision" ColumnName="NDivision" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="BBDDAplicacion.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="BBDDAplicacion.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="BBDDAplicacion.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="BBDDAplicacion.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="BBDDAplicacion.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="BBDDAplicacion.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BBDDAplicacion.Store.sp_upgraddiagrams" />
+          <FunctionImportMapping FunctionImportName="PersonalGETxNIF" FunctionName="BBDDAplicacion.Store.PersonalGETxNIF">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.PersonalGETxNIF_Result">
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="NCategoria" ColumnName="NCategoria" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="AccidentesCrear" FunctionName="BBDDAplicacion.Store.AccidentesCrear" />
+          <FunctionImportMapping FunctionImportName="AccidentesModificar" FunctionName="BBDDAplicacion.Store.AccidentesModificar" />
+          <FunctionImportMapping FunctionImportName="AccidentesConsulta" FunctionName="BBDDAplicacion.Store.AccidentesConsulta">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.AccidentesConsulta_Result">
+                <ScalarProperty Name="IDAutomatico" ColumnName="IDAutomatico" />
+                <ScalarProperty Name="BO" ColumnName="BO" />
+                <ScalarProperty Name="NCO" ColumnName="NCO" />
+                <ScalarProperty Name="NDelegacion" ColumnName="NDelegacion" />
+                <ScalarProperty Name="FechaAccidente" ColumnName="FechaAccidente" />
+                <ScalarProperty Name="ClasificacionAccidente" ColumnName="ClasificacionAccidente" />
+                <ScalarProperty Name="NIFTrabajador" ColumnName="NIFTrabajador" />
+                <ScalarProperty Name="FechaAccidente1" ColumnName="FechaAccidente1" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="MAccidActosInseguros">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidActosInseguros">
+              <MappingFragment StoreEntitySet="MAccidActosInseguros">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="ActosInseguros" ColumnName="ActosInseguros" />
+                <ScalarProperty Name="IDActosInseguros" ColumnName="IDActosInseguros" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidClasificacionAccidente">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidClasificacionAccidente">
+              <MappingFragment StoreEntitySet="MAccidClasificacionAccidente">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="ClasificacionAccidente" ColumnName="ClasificacionAccidente" />
+                <ScalarProperty Name="IDClasifAccid" ColumnName="IDClasifAccid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidCondicionesInseguras">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidCondicionesInseguras">
+              <MappingFragment StoreEntitySet="MAccidCondicionesInseguras">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="CondicionesInseguras" ColumnName="CondicionesInseguras" />
+                <ScalarProperty Name="IDCondInseguras" ColumnName="IDCondInseguras" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidConsecuencias">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidConsecuencias">
+              <MappingFragment StoreEntitySet="MAccidConsecuencias">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Consecuencias" ColumnName="Consecuencias" />
+                <ScalarProperty Name="IDConsecuencias" ColumnName="IDConsecuencias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidEvaluarRiesgo">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidEvaluarRiesgo">
+              <MappingFragment StoreEntitySet="MAccidEvaluarRiesgo">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="EvaluarRiesgo" ColumnName="EvaluarRiesgo" />
+                <ScalarProperty Name="IDEvalRiesgo" ColumnName="IDEvalRiesgo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidFormaSuceso">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidFormaSuceso">
+              <MappingFragment StoreEntitySet="MAccidFormaSuceso">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="FormaSuceso" ColumnName="FormaSuceso" />
+                <ScalarProperty Name="IDFormaSuceso" ColumnName="IDFormaSuceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidHora">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidHora">
+              <MappingFragment StoreEntitySet="MAccidHora">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Hora" ColumnName="Hora" />
+                <ScalarProperty Name="IDHora" ColumnName="IDHora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidLugarTrabajo">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidLugarTrabajo">
+              <MappingFragment StoreEntitySet="MAccidLugarTrabajo">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="LugarTrabajo" ColumnName="LugarTrabajo" />
+                <ScalarProperty Name="IDLugarTrabajo" ColumnName="IDLugarTrabajo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidParteLesionada">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidParteLesionada">
+              <MappingFragment StoreEntitySet="MAccidParteLesionada">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="ParteLesionada" ColumnName="ParteLesionada" />
+                <ScalarProperty Name="IDParteLesionada" ColumnName="IDParteLesionada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidTipoAccion">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidTipoAccion">
+              <MappingFragment StoreEntitySet="MAccidTipoAccion">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="TipodeAccion" ColumnName="TipodeAccion" />
+                <ScalarProperty Name="IDTipodeAccion" ColumnName="IDTipodeAccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidTipoGrafico">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidTipoGrafico">
+              <MappingFragment StoreEntitySet="MAccidTipoGrafico">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="NTipoGrafico" ColumnName="NTipoGrafico" />
+                <ScalarProperty Name="IDTipoGrafico" ColumnName="IDTipoGrafico" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidTipoLesion">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidTipoLesion">
+              <MappingFragment StoreEntitySet="MAccidTipoLesion">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="TipoLesion" ColumnName="TipoLesion" />
+                <ScalarProperty Name="IDTipoLesion" ColumnName="IDTipoLesion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAccidTipoRiesgo">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MAccidTipoRiesgo">
+              <MappingFragment StoreEntitySet="MAccidTipoRiesgo">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="TipoRiesgo" ColumnName="TipoRiesgo" />
+                <ScalarProperty Name="IDTipodeRiesgo" ColumnName="IDTipodeRiesgo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MCentrosOperativos">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MCentrosOperativos">
+              <MappingFragment StoreEntitySet="MCentrosOperativos">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="CC" ColumnName="CC" />
+                <ScalarProperty Name="NCO" ColumnName="NCO" />
+                <ScalarProperty Name="IDCO" ColumnName="IDCO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MDelegacion">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MDelegacion">
+              <MappingFragment StoreEntitySet="MDelegacion">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Division" ColumnName="Division" />
+                <ScalarProperty Name="NDelegacion" ColumnName="NDelegacion" />
+                <ScalarProperty Name="CC" ColumnName="CC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MDiasSemana">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MDiasSemana">
+              <MappingFragment StoreEntitySet="MDiasSemana">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Dia" ColumnName="Dia" />
+                <ScalarProperty Name="IDDia" ColumnName="IDDia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MDivision">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MDivision">
+              <MappingFragment StoreEntitySet="MDivision">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="NDivision" ColumnName="NDivision" />
+                <ScalarProperty Name="IDDivision" ColumnName="IDDivision" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEmpresas">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MEmpresas">
+              <MappingFragment StoreEntitySet="MEmpresas">
+                <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+                <ScalarProperty Name="IDEmpresa" ColumnName="IDEmpresa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEtiquetas">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MEtiquetas">
+              <MappingFragment StoreEntitySet="MEtiquetas">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Etiqueta" ColumnName="Etiqueta" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Seccion" ColumnName="Seccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MPaises">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MPaises">
+              <MappingFragment StoreEntitySet="MPaises">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="NPais" ColumnName="NPais" />
+                <ScalarProperty Name="IDPais" ColumnName="IDPais" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MPersonal">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MPersonal">
+              <MappingFragment StoreEntitySet="MPersonal">
+                <ScalarProperty Name="Fbaja" ColumnName="Fbaja" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="NIFTrabajador" ColumnName="NIFTrabajador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MPersonalCategoria">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MPersonalCategoria">
+              <MappingFragment StoreEntitySet="MPersonalCategoria">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="NCategoria" ColumnName="NCategoria" />
+                <ScalarProperty Name="IDCategoria" ColumnName="IDCategoria" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MSiNo">
+            <EntityTypeMapping TypeName="BBDDAplicacion.MSiNo">
+              <MappingFragment StoreEntitySet="MSiNo">
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="IDSiNo" ColumnName="IDSiNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="BBDDAplicacion.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAccidentes">
+            <EntityTypeMapping TypeName="BBDDAplicacion.TAccidentes">
+              <MappingFragment StoreEntitySet="TAccidentes">
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="UsuarioModificador1" ColumnName="UsuarioModificador1" />
+                <ScalarProperty Name="UsuarioCreador" ColumnName="UsuarioCreador" />
+                <ScalarProperty Name="EquipoInvestigacion3PuestoTrabajo" ColumnName="EquipoInvestigacion3PuestoTrabajo" />
+                <ScalarProperty Name="EquipoInvestigacion3Nombre" ColumnName="EquipoInvestigacion3Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion3Apellidos" ColumnName="EquipoInvestigacion3Apellidos" />
+                <ScalarProperty Name="EquipoInvestigacion2PuestoTrabajo" ColumnName="EquipoInvestigacion2PuestoTrabajo" />
+                <ScalarProperty Name="EquipoInvestigacion2Nombre" ColumnName="EquipoInvestigacion2Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion2Apellidos" ColumnName="EquipoInvestigacion2Apellidos" />
+                <ScalarProperty Name="EquipoInvestigacion1PuestoTrabajo" ColumnName="EquipoInvestigacion1PuestoTrabajo" />
+                <ScalarProperty Name="EquipoInvestigacion1Nombre" ColumnName="EquipoInvestigacion1Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion1Apellidos" ColumnName="EquipoInvestigacion1Apellidos" />
+                <ScalarProperty Name="ExisteProcedimientoTrabajoActividad" ColumnName="ExisteProcedimientoTrabajoActividad" />
+                <ScalarProperty Name="ConsecuenciaRiesgoElectricoAltura" ColumnName="ConsecuenciaRiesgoElectricoAltura" />
+                <ScalarProperty Name="AtendidoAmbulanciaServiciosdeUrgencia" ColumnName="AtendidoAmbulanciaServiciosdeUrgencia" />
+                <ScalarProperty Name="Seevacuoelaccidentadorapidaycorrectamente" ColumnName="Seevacuoelaccidentadorapidaycorrectamente" />
+                <ScalarProperty Name="EquiposProteccionDefinidosActividad" ColumnName="EquiposProteccionDefinidosActividad" />
+                <ScalarProperty Name="FormadoInformadoRiesgo" ColumnName="FormadoInformadoRiesgo" />
+                <ScalarProperty Name="EvaluarRiesgos" ColumnName="EvaluarRiesgos" />
+                <ScalarProperty Name="IdentificadoRiesgoEvaluacion" ColumnName="IdentificadoRiesgoEvaluacion" />
+                <ScalarProperty Name="TipoRiesgo" ColumnName="TipoRiesgo" />
+                <ScalarProperty Name="FormaSuceso" ColumnName="FormaSuceso" />
+                <ScalarProperty Name="CondicionesInseguras" ColumnName="CondicionesInseguras" />
+                <ScalarProperty Name="ActosInseguros" ColumnName="ActosInseguros" />
+                <ScalarProperty Name="TipoLesion" ColumnName="TipoLesion" />
+                <ScalarProperty Name="ParteLesionada" ColumnName="ParteLesionada" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Consecuencias" ColumnName="Consecuencias" />
+                <ScalarProperty Name="OtroLugarTtrabajo" ColumnName="OtroLugarTtrabajo" />
+                <ScalarProperty Name="LugardeTrabajo" ColumnName="LugardeTrabajo" />
+                <ScalarProperty Name="JornadasPerdidas" ColumnName="JornadasPerdidas" />
+                <ScalarProperty Name="FechaAlta" ColumnName="FechaAlta" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+                <ScalarProperty Name="TrabajoHabitual" ColumnName="TrabajoHabitual" />
+                <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
+                <ScalarProperty Name="Hora" ColumnName="Hora" />
+                <ScalarProperty Name="FechaAccidente" ColumnName="FechaAccidente" />
+                <ScalarProperty Name="MandoSuperior" ColumnName="MandoSuperior" />
+                <ScalarProperty Name="Antiguedad" ColumnName="Antiguedad" />
+                <ScalarProperty Name="ExperienciaPuesto" ColumnName="ExperienciaPuesto" />
+                <ScalarProperty Name="TrabajoRealizaba" ColumnName="TrabajoRealizaba" />
+                <ScalarProperty Name="PuestoTrabajo" ColumnName="PuestoTrabajo" />
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="NIFTrabajador" ColumnName="NIFTrabajador" />
+                <ScalarProperty Name="NombreSubcontrata" ColumnName="NombreSubcontrata" />
+                <ScalarProperty Name="Subcontratista" ColumnName="Subcontratista" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="BO" ColumnName="BO" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AccidentesLeer" FunctionName="BBDDAplicacion.Store.AccidentesLeer">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BBDDAplicacion.AccidentesLeer_Result">
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="BO" ColumnName="BO" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Subcontratista" ColumnName="Subcontratista" />
+                <ScalarProperty Name="NombreSubcontrata" ColumnName="NombreSubcontrata" />
+                <ScalarProperty Name="NIFTrabajador" ColumnName="NIFTrabajador" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="PuestoTrabajo" ColumnName="PuestoTrabajo" />
+                <ScalarProperty Name="TrabajoRealizaba" ColumnName="TrabajoRealizaba" />
+                <ScalarProperty Name="ExperienciaPuesto" ColumnName="ExperienciaPuesto" />
+                <ScalarProperty Name="Antiguedad" ColumnName="Antiguedad" />
+                <ScalarProperty Name="MandoSuperior" ColumnName="MandoSuperior" />
+                <ScalarProperty Name="FechaAccidente" ColumnName="FechaAccidente" />
+                <ScalarProperty Name="Hora" ColumnName="Hora" />
+                <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
+                <ScalarProperty Name="TrabajoHabitual" ColumnName="TrabajoHabitual" />
+                <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="FechaAlta" ColumnName="FechaAlta" />
+                <ScalarProperty Name="JornadasPerdidas" ColumnName="JornadasPerdidas" />
+                <ScalarProperty Name="LugardeTrabajo" ColumnName="LugardeTrabajo" />
+                <ScalarProperty Name="OtroLugarTtrabajo" ColumnName="OtroLugarTtrabajo" />
+                <ScalarProperty Name="Consecuencias" ColumnName="Consecuencias" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="ParteLesionada" ColumnName="ParteLesionada" />
+                <ScalarProperty Name="TipoLesion" ColumnName="TipoLesion" />
+                <ScalarProperty Name="ActosInseguros" ColumnName="ActosInseguros" />
+                <ScalarProperty Name="CondicionesInseguras" ColumnName="CondicionesInseguras" />
+                <ScalarProperty Name="FormaSuceso" ColumnName="FormaSuceso" />
+                <ScalarProperty Name="TipoRiesgo" ColumnName="TipoRiesgo" />
+                <ScalarProperty Name="IdentificadoRiesgoEvaluacion" ColumnName="IdentificadoRiesgoEvaluacion" />
+                <ScalarProperty Name="EvaluarRiesgos" ColumnName="EvaluarRiesgos" />
+                <ScalarProperty Name="FormadoInformadoRiesgo" ColumnName="FormadoInformadoRiesgo" />
+                <ScalarProperty Name="EquiposProteccionDefinidosActividad" ColumnName="EquiposProteccionDefinidosActividad" />
+                <ScalarProperty Name="Seevacuoelaccidentadorapidaycorrectamente" ColumnName="Seevacuoelaccidentadorapidaycorrectamente" />
+                <ScalarProperty Name="AtendidoAmbulanciaServiciosdeUrgencia" ColumnName="AtendidoAmbulanciaServiciosdeUrgencia" />
+                <ScalarProperty Name="ConsecuenciaRiesgoElectricoAltura" ColumnName="ConsecuenciaRiesgoElectricoAltura" />
+                <ScalarProperty Name="ExisteProcedimientoTrabajoActividad" ColumnName="ExisteProcedimientoTrabajoActividad" />
+                <ScalarProperty Name="EquipoInvestigacion1Apellidos" ColumnName="EquipoInvestigacion1Apellidos" />
+                <ScalarProperty Name="EquipoInvestigacion1Nombre" ColumnName="EquipoInvestigacion1Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion1PuestoTrabajo" ColumnName="EquipoInvestigacion1PuestoTrabajo" />
+                <ScalarProperty Name="EquipoInvestigacion2Apellidos" ColumnName="EquipoInvestigacion2Apellidos" />
+                <ScalarProperty Name="EquipoInvestigacion2Nombre" ColumnName="EquipoInvestigacion2Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion2PuestoTrabajo" ColumnName="EquipoInvestigacion2PuestoTrabajo" />
+                <ScalarProperty Name="EquipoInvestigacion3Apellidos" ColumnName="EquipoInvestigacion3Apellidos" />
+                <ScalarProperty Name="EquipoInvestigacion3Nombre" ColumnName="EquipoInvestigacion3Nombre" />
+                <ScalarProperty Name="EquipoInvestigacion3PuestoTrabajo" ColumnName="EquipoInvestigacion3PuestoTrabajo" />
+                <ScalarProperty Name="UsuarioCreador" ColumnName="UsuarioCreador" />
+                <ScalarProperty Name="UsuarioModificador1" ColumnName="UsuarioModificador1" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

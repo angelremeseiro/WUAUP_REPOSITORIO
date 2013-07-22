@@ -1,0 +1,68 @@
+﻿#cuerpo {
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 833px;
+    height: 536px;
+    border-style: solid;
+    border-color: #324b32;
+    border-width: 0px;
+}
+
+
+#barraTitulo {
+    
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
+    font-size: 16pt;
+    height: 16px;
+    width: 800px;
+    background-color: white;
+    padding: 16px;
+    padding-left: 16px;
+    font-family: Calibri,verdana, helvetica;
+    background-image: url(../paginas/images/BarraTitulo.png);
+}
+
+.seccion {
+    padding-left: 12px;
+    padding-top: 10px;
+    color: #0a5488;
+    font-size: 12px;
+    font-family: "Segoe UI", Segoe, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.datos {
+}
+
+.tabla {
+    /*border-collapse: separate;*/
+    font-family: "Segoe UI", Segoe, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 24px;
+    padding-top: 0px;
+    color: #000;
+    font-size: 12px;
+    border-spacing: 0px 5px;
+    width:auto;
+}
+
+/*Convertir un bloque o div en 3 columnas*/
+.mibloque {
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -o-column-count: 3;
+    /*Espacio entre columnas*/
+    column-gap: 2em;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    -o-column-gap: 2em;
+    /*Agrega una barra solida de color*/
+    column-rule: 2px solid #666;
+    -webkit-column-rule: 2px solid #666;
+    -moz-column-rule: 2px solid #666;
+    -o-column-rule: 2px solid #666;
+}
